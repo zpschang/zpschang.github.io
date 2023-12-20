@@ -29,7 +29,7 @@ Researcher, Microsoft Research Asia
 
 ## News
 
-- 2023-11: Our paper [*Distributional Pareto-Optimal Multi-Objective Reinforcement Learning*](https://openreview.net/pdf?id=prIwYTU9PV) is accepted by NeurIPS 2023. Our paper *IG-Net: Image-Goal Network for Offline Visual Navigation on A Large-Scale Game Map* is accepted by Robot Learning Worshop at NeurIPS 2023. 
+- 2023-11: Our paper [*Distributional Pareto-Optimal Multi-Objective Reinforcement Learning*](https://openreview.net/pdf?id=prIwYTU9PV) is accepted by NeurIPS 2023. Our paper [*IG-Net: Image-Goal Network for Offline Visual Navigation on A Large-Scale Game Map*](https://www.robot-learning.ml/2023/files/paper32.pdf) is accepted by Robot Learning Worshop at NeurIPS 2023. 
 
 ## Short Bio
 
@@ -39,7 +39,7 @@ I'm a researcher at Microsoft Research Asia. My research interest lies in visual
 
 1. IG-Net: Image-Goal Network for Offline Visual Navigation on A Large-Scale Game Map <br>
     **Pushi Zhang**\*, Baiting Zhu\*, Xin-Qiang Cai\*, Li Zhao, Masashi Sugiyama, Jiang Bian. <br>
-    NeurIPS 2023 Robot Learning Workshop [[demo](https://www.youtube.com/watch?v=pOtnB_Rfciw)]
+    NeurIPS 2023 Robot Learning Workshop [[demo](https://www.youtube.com/watch?v=pOtnB_Rfciw)] [[pdf](https://www.robot-learning.ml/2023/files/paper32.pdf)]
 2. Distributional Pareto-Optimal Multi-Objective Reinforcement Learning <br>
     Xin-Qiang Cai\*, **Pushi Zhang**\*, Li Zhao, Jiang Bian, Masashi Sugiyama, Ashley J. Llorens. <br>
     NeurIPS 2023 [[pdf](https://openreview.net/pdf?id=prIwYTU9PV)]
