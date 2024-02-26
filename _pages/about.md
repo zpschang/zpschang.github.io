@@ -42,7 +42,7 @@ I'm a researcher at Microsoft Research Asia. My research interest lies in visual
     NeurIPS 2023 Robot Learning Workshop [[demo](https://www.youtube.com/watch?v=pOtnB_Rfciw)] [[pdf](https://www.robot-learning.ml/2023/files/paper32.pdf)]
 2. Distributional Pareto-Optimal Multi-Objective Reinforcement Learning <br>
     Xin-Qiang Cai\*, **Pushi Zhang**\*, Li Zhao, Jiang Bian, Masashi Sugiyama, Ashley J. Llorens. <br>
-    NeurIPS 2023 [[code](https://github.com/zpschang/DPMORL)] [[pdf](https://openreview.net/pdf?id=prIwYTU9PV)]
+    NeurIPS 2023 [[code](https://github.com/zpschang/DPMORL)] [[pdf](https://papers.nips.cc/paper_files/paper/2023/file/32285dd184dbfc33cb2d1f0db53c23c5-Paper-Conference.pdf)]
 3. Asking Before Action: Gather Information in Embodied Decision Making with Language Models <br>
     Xiaoyu Chen, Shenao Zhang, **Pushi Zhang**, Li Zhao, Jianyu Chen. <br>
     In submission, 2023.5 [[pdf](https://browse.arxiv.org/pdf/2305.15695.pdf)]
