@@ -51,7 +51,7 @@ I'm a researcher at Microsoft Research Asia. My research interest lies in visual
     NeurIPS 2022 [[pdf](https://browse.arxiv.org/pdf/2212.12735.pdf)]
 5. Distributional Reinforcement Learning for Multi-Dimensional Reward Functions <br>
     **Pushi Zhang**, Xiaoyu Chen, Li Zhao, Wei Xiong, Tao Qin, Tie-Yan Liu. <br> 
-    NeurIPS 2021 [[pdf](https://proceedings.neurips.cc/paper/2021/file/0b9e57c46de934cee33b0e8d1839bfc2-Paper.pdf)]
+    NeurIPS 2021 [[code](https://github.com/zpschang/MD3QN)] [[pdf](https://proceedings.neurips.cc/paper/2021/file/0b9e57c46de934cee33b0e8d1839bfc2-Paper.pdf)]
 6. Independence-aware Advantage Estimation <br>
     **Pushi Zhang**, Li Zhao, Guoqing Liu, Jiang Bian, Minlie Huang, Tao Qin, Tie-Yan Liu. <br>
     IJCAI 2021 [[pdf](https://www.ijcai.org/proceedings/2021/0461.pdf)]
