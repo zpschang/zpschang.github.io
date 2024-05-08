@@ -33,7 +33,7 @@ Researcher, Microsoft Research Asia
 
 ## Short Bio
 
-I'm a researcher at Microsoft Research Asia. My research interest lies in visual navigation, embodied AI, and reinforcement learning. 
+I'm a researcher at Microsoft Research Asia. In my current research, I focus on developing new training methods for vision-based navigation foundation models in games and for behavior foundation models in general embodied AI. Specifically, my research interest includes collecting high-quality datasets for embodied AI, adaptation of foundation models to large scenes with long contexts, and adaptation of foundation models to concrete action space. 
 
 ## Publications
 
@@ -45,7 +45,7 @@ I'm a researcher at Microsoft Research Asia. My research interest lies in visual
     NeurIPS 2023 [[code](https://github.com/zpschang/DPMORL)] [[pdf](https://papers.nips.cc/paper_files/paper/2023/file/32285dd184dbfc33cb2d1f0db53c23c5-Paper-Conference.pdf)]
 3. Asking Before Action: Gather Information in Embodied Decision Making with Language Models <br>
     Xiaoyu Chen, Shenao Zhang, **Pushi Zhang**, Li Zhao, Jianyu Chen. <br>
-    In submission, 2023.5 [[pdf](https://browse.arxiv.org/pdf/2305.15695.pdf)]
+    Arxiv 2023.5 [[pdf](https://browse.arxiv.org/pdf/2305.15695.pdf)]
 4. An Adaptive Deep RL Method for Non-Stationary Environments with Piecewise Stable Context <br>
     Xiaoyu Chen, Xiangming Zhu, Yufeng Zheng, **Pushi Zhang**, Li Zhao, Wenxue Cheng, Peng Cheng, Yongqiang Xiong, Tao Qin, Jianyu Chen, Tie-Yan Liu. <br>
     NeurIPS 2022 [[pdf](https://browse.arxiv.org/pdf/2212.12735.pdf)]
