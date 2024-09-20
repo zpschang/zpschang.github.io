@@ -33,7 +33,7 @@ Researcher, Microsoft Research Asia
 
 ## Short Bio
 
-I'm a researcher at Microsoft Research Asia, currently leading the project of RL for autonomous game agent at Microsoft Research Asia in collaboration with XBox team. My current research interests include reinforcement learning, foundation models for embodied AI, and generation of high-quality embodied AI dataset. Please email me at [pushizhang@microsoft.com](mailto:pushizhang@microsoft.com) if you are looking for internship position. 
+I'm a researcher at Microsoft Research Asia, currently leading the project of RL for autonomous game agent at Microsoft Research Asia in collaboration with XBox team. My current research interests include reinforcement learning, foundation models for embodied AI, and generation of high-quality embodied AI dataset. Please [email me](mailto:pushizhang@microsoft.com) if you are looking for internship position. 
 
 ## Publications
 
