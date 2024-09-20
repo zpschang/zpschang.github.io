@@ -29,6 +29,7 @@ Researcher, Microsoft Research Asia
 
 ## News
 
+- 2024-09: Our project for pixel-based long-horizon navigation agent in modern games is coming soon. 
 - 2023-11: Our paper [*Distributional Pareto-Optimal Multi-Objective Reinforcement Learning*](https://openreview.net/pdf?id=prIwYTU9PV) is accepted by NeurIPS 2023. Our paper [*IG-Net: Image-Goal Network for Offline Visual Navigation on A Large-Scale Game Map*](https://www.robot-learning.ml/2023/files/paper32.pdf) is accepted by Robot Learning Worshop at NeurIPS 2023. 
 
 ## Short Bio
