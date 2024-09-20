@@ -33,7 +33,7 @@ Researcher, Microsoft Research Asia
 
 ## Short Bio
 
-I'm a researcher at Microsoft Research Asia. In my current research, I focus on developing new training methods for vision-based navigation foundation models in games and for behavior foundation models in general embodied AI. Specifically, my research interest includes collecting high-quality datasets for embodied AI, adaptation of foundation models to large scenes with long contexts, and adaptation of foundation models to concrete action space. 
+I'm a researcher at Microsoft Research Asia. I currently lead for the project of RL for autonomous game agent at Microsoft Research Asia in collaboration with XBox team. My current research interest lies in pretraining for embodied AI, and generation of high-quality datasets for embodied AI. 
 
 ## Publications
 
@@ -74,4 +74,4 @@ We must perceive in order to move, but we must also move in order to perceive.
 
 I love research and hope to do the research work that is beneficial to the world. 
 
-*Last update: 2024.2.26*
+*Last update: 2024.9.20*
