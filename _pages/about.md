@@ -23,23 +23,23 @@ Put your address / P.O. box / other info right below your picture. You can also 
 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.  -->
 
-Researcher, Microsoft Research Asia
+Researcher, Microsoft Research
 
 [Google Scholar](https://scholar.google.com/citations?user=_DLMSkIAAAAJ&hl=en&oi=ao) \| Email: [pushizhang@microsoft.com](mailto:pushizhang@microsoft.com)
 
 ## News
 
-- 2024-09: Our project for pixel-based long-horizon navigation agent is coming soon. 
-- 2023-11: Our paper [*Distributional Pareto-Optimal Multi-Objective Reinforcement Learning*](https://openreview.net/pdf?id=prIwYTU9PV) is accepted by NeurIPS 2023. Our paper [*IG-Net: Image-Goal Network for Offline Visual Navigation on A Large-Scale Game Map*](https://www.robot-learning.ml/2023/files/paper32.pdf) is accepted by Robot Learning Worshop at NeurIPS 2023. 
+- 2024-10: Our project [<i>IGOR: Image-GOal Representations are the Atomic Control Units for Foundation Models in Embodied AI</i>](https://www.microsoft.com/en-us/research/project/igor-image-goal-representations/) is released. 
+- 2023-11: Our paper [<i>Distributional Pareto-Optimal Multi-Objective Reinforcement Learning</i>](https://openreview.net/pdf?id=prIwYTU9PV) is accepted by NeurIPS 2023. Our paper [<i>IG-Net: Image-Goal Network for Offline Visual Navigation on A Large-Scale Game Map</i>](https://www.robot-learning.ml/2023/files/paper32.pdf) is accepted by Robot Learning Worshop at NeurIPS 2023. 
 
 ## Short Bio
 
-I'm a researcher at Microsoft Research Asia, currently leading the project of RL for autonomous game agent at Microsoft Research Asia in collaboration with XBox team. My current research interests include reinforcement learning, foundation models for embodied AI, and generation of high-quality embodied AI dataset. Please [email me](mailto:pushizhang@microsoft.com) if you are looking for internship position. 
+I'm a researcher in the Machine Learning Group at Microsoft Research (Asia), currently leading the project of RL for autonomous game agent at Microsoft Research in collaboration with XBox team. My current research interests include reinforcement learning and foundation models for embodied AI. 
 
 ## Publications
 
 1. IG-Net: Image-Goal Network for Offline Visual Navigation on A Large-Scale Game Map <br>
-    **Pushi Zhang**\*, Baiting Zhu\*, Xin-Qiang Cai\*, Li Zhao, Masashi Sugiyama, Jiang Bian. <br>
+    Baiting Zhu\*, **Pushi Zhang**\*, Xin-Qiang Cai\*, Li Zhao, Masashi Sugiyama, Jiang Bian. <br>
     NeurIPS 2023 Robot Learning Workshop [[demo](https://www.youtube.com/watch?v=pOtnB_Rfciw)] [[pdf](https://www.robot-learning.ml/2023/files/paper32.pdf)]
 2. Distributional Pareto-Optimal Multi-Objective Reinforcement Learning <br>
     Xin-Qiang Cai\*, **Pushi Zhang**\*, Li Zhao, Jiang Bian, Masashi Sugiyama, Ashley J. Llorens. <br>
