@@ -23,7 +23,7 @@ Put your address / P.O. box / other info right below your picture. You can also 
 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.  -->
 
-Researcher, Microsoft Research
+Researcher at Microsoft Research
 
 [Google Scholar](https://scholar.google.com/citations?user=_DLMSkIAAAAJ&hl=en&oi=ao) \| Email: [pushizhang@microsoft.com](mailto:pushizhang@microsoft.com)
 
@@ -34,7 +34,7 @@ Researcher, Microsoft Research
 
 ## Short Bio
 
-I'm a researcher in the Machine Learning Group at Microsoft Research (Asia), currently leading the project of RL for autonomous game agent at Microsoft Research in collaboration with XBox team. My current research interests include reinforcement learning and foundation models for embodied AI. 
+I'm now a researcher at Machine Learning Group, Microsoft Research (Asia) under [Li Zhao](https://www.microsoft.com/en-us/research/people/lizo/)'s group. My current research interests include reinforcement learning and foundation models for embodied AI. I'm also responsible for the project of RL for autonomous game agent at Microsoft Research in collaboration with XBox team. 
 
 ## Publications
 
@@ -73,6 +73,6 @@ We must perceive in order to move, but we must also move in order to perceive.
 
 ## About Myself
 
-I love research and hope to do the research work that is beneficial to the world. 
+I hope to make a positive impact by conducting research that contributes meaningfully to society. My goal is to create knowledge and solutions that benefit the world and inspire others along the way.
 
-*Last update: 2024.9.20*
+*Last update: 2025.1.2*
