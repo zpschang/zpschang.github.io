@@ -16,6 +16,8 @@ nav: true
 nav_order: 2
 ---
 
+<h1 style="text-align: center;">My Blog</h1>
+
 <div class="post">
 
   {% assign blog_name_size = site.blog_name | size %}
@@ -99,6 +101,7 @@ nav_order: 2
 
   <ul class="post-list">
     {% for post in paginator.posts %}
+      {% unless post.hidden %}
 
     {% if post.external_source == blank %}
       {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
@@ -162,7 +165,7 @@ nav_order: 2
 </div>
 {%- endif -%}
     </li>
-
+    {% endunless %}
     {% endfor %}
   </ul>
 
