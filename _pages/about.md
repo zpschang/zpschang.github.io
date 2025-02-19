@@ -27,36 +27,40 @@ Researcher at Microsoft Research
 
 [Google Scholar](https://scholar.google.com/citations?user=_DLMSkIAAAAJ&hl=en&oi=ao) \| Email: [pushizhang@microsoft.com](mailto:pushizhang@microsoft.com)
 
+## Short Bio
+
+I'm now a researcher at Machine Learning Group, Microsoft Research (Asia) under [Li Zhao](https://www.microsoft.com/en-us/research/people/lizo/)'s group. My current research interests include reinforcement learning and foundation models for embodied AI. I was also responsible for the project of Vision-based Game-Testing AI, in collaboration with Microsoft XBox team. 
+
 ## News
 
+- 2025-02: We release the preliminary results of our ongoing work [IGNavFM: A Foundation Model for Image-Goal Navigation](/assets/pdf/IGNavFM.pdf). 
 - 2024-10: Our project [<i>IGOR: Image-GOal Representations are the Atomic Control Units for Foundation Models in Embodied AI</i>](https://www.microsoft.com/en-us/research/project/igor-image-goal-representations/) is released. 
 - 2023-11: Our paper [<i>Distributional Pareto-Optimal Multi-Objective Reinforcement Learning</i>](https://openreview.net/pdf?id=prIwYTU9PV) is accepted by NeurIPS 2023. Our paper [<i>IG-Net: Image-Goal Network for Offline Visual Navigation on A Large-Scale Game Map</i>](https://www.robot-learning.ml/2023/files/paper32.pdf) is accepted by Robot Learning Worshop at NeurIPS 2023. 
 
-## Short Bio
-
-I'm now a researcher at Machine Learning Group, Microsoft Research (Asia) under [Li Zhao](https://www.microsoft.com/en-us/research/people/lizo/)'s group. My current research interests include reinforcement learning and foundation models for embodied AI. I'm also responsible for the project of RL for autonomous game agent at Microsoft Research in collaboration with XBox team. 
 
 ## Publications
 
-1. IG-Net: Image-Goal Network for Offline Visual Navigation on A Large-Scale Game Map <br>
+1. IGNavFM: A Foundation Model for Image-Goal Navigation <br>
+   Work in Progress [[pdf](/assets/pdf/IGNavFM.pdf)]
+2. IG-Net: Image-Goal Network for Offline Visual Navigation on A Large-Scale Game Map <br>
     Baiting Zhu\*, **Pushi Zhang**\*, Xin-Qiang Cai\*, Li Zhao, Masashi Sugiyama, Jiang Bian. <br>
     NeurIPS 2023 Robot Learning Workshop [[demo](https://www.youtube.com/watch?v=pOtnB_Rfciw)] [[pdf](https://www.robot-learning.ml/2023/files/paper32.pdf)]
-2. Distributional Pareto-Optimal Multi-Objective Reinforcement Learning <br>
+3. Distributional Pareto-Optimal Multi-Objective Reinforcement Learning <br>
     Xin-Qiang Cai\*, **Pushi Zhang**\*, Li Zhao, Jiang Bian, Masashi Sugiyama, Ashley J. Llorens. <br>
     NeurIPS 2023 [[code](https://github.com/zpschang/DPMORL)] [[pdf](https://papers.nips.cc/paper_files/paper/2023/file/32285dd184dbfc33cb2d1f0db53c23c5-Paper-Conference.pdf)]
-3. Asking Before Action: Gather Information in Embodied Decision Making with Language Models <br>
+4. Asking Before Action: Gather Information in Embodied Decision Making with Language Models <br>
     Xiaoyu Chen, Shenao Zhang, **Pushi Zhang**, Li Zhao, Jianyu Chen. <br>
     Arxiv 2023.5 [[pdf](https://browse.arxiv.org/pdf/2305.15695.pdf)]
-4. An Adaptive Deep RL Method for Non-Stationary Environments with Piecewise Stable Context <br>
+5. An Adaptive Deep RL Method for Non-Stationary Environments with Piecewise Stable Context <br>
     Xiaoyu Chen, Xiangming Zhu, Yufeng Zheng, **Pushi Zhang**, Li Zhao, Wenxue Cheng, Peng Cheng, Yongqiang Xiong, Tao Qin, Jianyu Chen, Tie-Yan Liu. <br>
     NeurIPS 2022 [[pdf](https://browse.arxiv.org/pdf/2212.12735.pdf)]
-5. Distributional Reinforcement Learning for Multi-Dimensional Reward Functions <br>
+6. Distributional Reinforcement Learning for Multi-Dimensional Reward Functions <br>
     **Pushi Zhang**, Xiaoyu Chen, Li Zhao, Wei Xiong, Tao Qin, Tie-Yan Liu. <br> 
     NeurIPS 2021 [[code](https://github.com/zpschang/MD3QN)] [[pdf](https://proceedings.neurips.cc/paper/2021/file/0b9e57c46de934cee33b0e8d1839bfc2-Paper.pdf)]
-6. Independence-aware Advantage Estimation <br>
+7. Independence-aware Advantage Estimation <br>
     **Pushi Zhang**, Li Zhao, Guoqing Liu, Jiang Bian, Minlie Huang, Tao Qin, Tie-Yan Liu. <br>
     IJCAI 2021 [[pdf](https://www.ijcai.org/proceedings/2021/0461.pdf)]
-7. Demonstration Actor Critic <br>
+8. Demonstration Actor Critic <br>
     Guoqing Liu, Li Zhao, **Pushi Zhang**, Jiang Bian, Tao Qin, Nenghai Yu, Tie-Yan Liu. <br>
     Neurocomputing 2021 [[pdf](https://www.sciencedirect.com/science/article/abs/pii/S0925231220320282)]
 
@@ -75,4 +79,4 @@ We must perceive in order to move, but we must also move in order to perceive.
 
 I hope to make a positive impact by conducting research that contributes meaningfully to society. My goal is to create knowledge and solutions that benefit the world and inspire others along the way.
 
-*Last update: 2025.1.2*
+*Last update: 2025.2.19*
