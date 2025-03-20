@@ -33,7 +33,7 @@ I'm now a researcher at Machine Learning Group, Microsoft Research (Asia) under 
 
 ## News
 
-- 2025-02: We release the preliminary results of our ongoing work [IGNavFM: A Foundation Model for Image-Goal Navigation](/assets/pdf/IGNavFM.pdf). 
+<!-- - 2025-02: We release the preliminary results of our ongoing work [IGNavFM: A Foundation Model for Image-Goal Navigation](/assets/pdf/IGNavFM.pdf).  -->
 - 2024-10: Our project [<i>IGOR: Image-GOal Representations are the Atomic Control Units for Foundation Models in Embodied AI</i>](https://www.microsoft.com/en-us/research/project/igor-image-goal-representations/) is released. 
 - 2023-11: Our paper [<i>Distributional Pareto-Optimal Multi-Objective Reinforcement Learning</i>](https://openreview.net/pdf?id=prIwYTU9PV) is accepted by NeurIPS 2023. Our paper [<i>IG-Net: Image-Goal Network for Offline Visual Navigation on A Large-Scale Game Map</i>](https://www.robot-learning.ml/2023/files/paper32.pdf) is accepted by Robot Learning Worshop at NeurIPS 2023. 
 
