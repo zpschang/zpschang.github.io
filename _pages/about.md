@@ -81,4 +81,4 @@ We must perceive in order to move, but we must also move in order to perceive.
 
 I hope to make a positive impact by conducting research that contributes meaningfully to society. My goal is to create knowledge and solutions that benefit the world and inspire others along the way.
 
-*Last update: 2025.2.19*
+*Last update: 2025.7.28*
