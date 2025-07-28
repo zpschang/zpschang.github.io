@@ -40,27 +40,29 @@ I'm now a researcher at Machine Learning Group, Microsoft Research (Asia) under 
 
 ## Publications
 
-1. IGNavFM: A Foundation Model for Image-Goal Navigation <br>
-   Work in Progress [[pdf](/assets/pdf/IGNavFM.pdf)]
-2. IG-Net: Image-Goal Network for Offline Visual Navigation on A Large-Scale Game Map <br>
+1. PIG-Nav: Key Insights for Pretrained Image Goal Navigation Models <br>
+   July 2025 [[pdf](https://arxiv.org/pdf/2507.17220)]
+1. What Do Latent Action Models Actually Learn? <br>
+   June 2025 [[pdf](https://arxiv.org/pdf/2507.17220)]
+1. IG-Net: Image-Goal Network for Offline Visual Navigation on A Large-Scale Game Map <br>
     Baiting Zhu\*, **Pushi Zhang**\*, Xin-Qiang Cai\*, Li Zhao, Masashi Sugiyama, Jiang Bian. <br>
     NeurIPS 2023 Robot Learning Workshop [[demo](https://www.youtube.com/watch?v=pOtnB_Rfciw)] [[pdf](https://www.robot-learning.ml/2023/files/paper32.pdf)]
-3. Distributional Pareto-Optimal Multi-Objective Reinforcement Learning <br>
+1. Distributional Pareto-Optimal Multi-Objective Reinforcement Learning <br>
     Xin-Qiang Cai\*, **Pushi Zhang**\*, Li Zhao, Jiang Bian, Masashi Sugiyama, Ashley J. Llorens. <br>
     NeurIPS 2023 [[code](https://github.com/zpschang/DPMORL)] [[pdf](https://papers.nips.cc/paper_files/paper/2023/file/32285dd184dbfc33cb2d1f0db53c23c5-Paper-Conference.pdf)]
-4. Asking Before Action: Gather Information in Embodied Decision Making with Language Models <br>
+1. Asking Before Action: Gather Information in Embodied Decision Making with Language Models <br>
     Xiaoyu Chen, Shenao Zhang, **Pushi Zhang**, Li Zhao, Jianyu Chen. <br>
-    Arxiv 2023.5 [[pdf](https://browse.arxiv.org/pdf/2305.15695.pdf)]
-5. An Adaptive Deep RL Method for Non-Stationary Environments with Piecewise Stable Context <br>
+    May 2023 [[pdf](https://arxiv.org/pdf/2305.15695)]
+1. An Adaptive Deep RL Method for Non-Stationary Environments with Piecewise Stable Context <br>
     Xiaoyu Chen, Xiangming Zhu, Yufeng Zheng, **Pushi Zhang**, Li Zhao, Wenxue Cheng, Peng Cheng, Yongqiang Xiong, Tao Qin, Jianyu Chen, Tie-Yan Liu. <br>
-    NeurIPS 2022 [[pdf](https://browse.arxiv.org/pdf/2212.12735.pdf)]
-6. Distributional Reinforcement Learning for Multi-Dimensional Reward Functions <br>
+    NeurIPS 2022 [[pdf](https://arxiv.org/pdf/2212.12735)]
+1. Distributional Reinforcement Learning for Multi-Dimensional Reward Functions <br>
     **Pushi Zhang**, Xiaoyu Chen, Li Zhao, Wei Xiong, Tao Qin, Tie-Yan Liu. <br> 
     NeurIPS 2021 [[code](https://github.com/zpschang/MD3QN)] [[pdf](https://proceedings.neurips.cc/paper/2021/file/0b9e57c46de934cee33b0e8d1839bfc2-Paper.pdf)]
-7. Independence-aware Advantage Estimation <br>
+1. Independence-aware Advantage Estimation <br>
     **Pushi Zhang**, Li Zhao, Guoqing Liu, Jiang Bian, Minlie Huang, Tao Qin, Tie-Yan Liu. <br>
     IJCAI 2021 [[pdf](https://www.ijcai.org/proceedings/2021/0461.pdf)]
-8. Demonstration Actor Critic <br>
+1. Demonstration Actor Critic <br>
     Guoqing Liu, Li Zhao, **Pushi Zhang**, Jiang Bian, Tao Qin, Nenghai Yu, Tie-Yan Liu. <br>
     Neurocomputing 2021 [[pdf](https://www.sciencedirect.com/science/article/abs/pii/S0925231220320282)]
 
