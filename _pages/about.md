@@ -34,16 +34,19 @@ I'm now a researcher at Machine Learning Group, Microsoft Research (Asia) under 
 ## News
 
 <!-- - 2025-02: We release the preliminary results of our ongoing work [IGNavFM: A Foundation Model for Image-Goal Navigation](/assets/pdf/IGNavFM.pdf).  -->
+- 2025-08: Our project [<i>villa-X: Enhancing Latent Action Modeling in Vision-Language-Action Models</i>](https://microsoft.github.io/villa-x/) is released.
 - 2024-10: Our project [<i>IGOR: Image-GOal Representations are the Atomic Control Units for Foundation Models in Embodied AI</i>](https://www.microsoft.com/en-us/research/project/igor-image-goal-representations/) is released. 
 - 2023-11: Our paper [<i>Distributional Pareto-Optimal Multi-Objective Reinforcement Learning</i>](https://openreview.net/pdf?id=prIwYTU9PV) is accepted by NeurIPS 2023. Our paper [<i>IG-Net: Image-Goal Network for Offline Visual Navigation on A Large-Scale Game Map</i>](https://www.robot-learning.ml/2023/files/paper32.pdf) is accepted by Robot Learning Worshop at NeurIPS 2023. 
 
 
 ## Publications
 
+1. villa-X: Enhancing Latent Action Modeling in Vision-Language-Action Models <br>
+   Arxiv 2025 [[pdf](https://arxiv.org/pdf/2507.23682)] [[code](https://microsoft.github.io/villa-x/)] [[website](https://microsoft.github.io/villa-x/)]
 1. PIG-Nav: Key Insights for Pretrained Image Goal Navigation Models <br>
-   July 2025 [[pdf](https://arxiv.org/pdf/2507.17220)]
+   Arxiv 2025 [[pdf](https://arxiv.org/pdf/2507.17220)] [[code]() (released soon)]
 1. What Do Latent Action Models Actually Learn? <br>
-   June 2025 [[pdf](https://arxiv.org/pdf/2507.17220)]
+   Arxiv 2025 [[pdf](https://arxiv.org/pdf/2507.17220)]
 1. IG-Net: Image-Goal Network for Offline Visual Navigation on A Large-Scale Game Map <br>
     Baiting Zhu\*, **Pushi Zhang**\*, Xin-Qiang Cai\*, Li Zhao, Masashi Sugiyama, Jiang Bian. <br>
     NeurIPS 2023 Robot Learning Workshop [[demo](https://www.youtube.com/watch?v=pOtnB_Rfciw)] [[pdf](https://www.robot-learning.ml/2023/files/paper32.pdf)]
@@ -52,7 +55,7 @@ I'm now a researcher at Machine Learning Group, Microsoft Research (Asia) under 
     NeurIPS 2023 [[code](https://github.com/zpschang/DPMORL)] [[pdf](https://papers.nips.cc/paper_files/paper/2023/file/32285dd184dbfc33cb2d1f0db53c23c5-Paper-Conference.pdf)]
 1. Asking Before Action: Gather Information in Embodied Decision Making with Language Models <br>
     Xiaoyu Chen, Shenao Zhang, **Pushi Zhang**, Li Zhao, Jianyu Chen. <br>
-    May 2023 [[pdf](https://arxiv.org/pdf/2305.15695)]
+    Arxiv 2023 [[pdf](https://arxiv.org/pdf/2305.15695)]
 1. An Adaptive Deep RL Method for Non-Stationary Environments with Piecewise Stable Context <br>
     Xiaoyu Chen, Xiangming Zhu, Yufeng Zheng, **Pushi Zhang**, Li Zhao, Wenxue Cheng, Peng Cheng, Yongqiang Xiong, Tao Qin, Jianyu Chen, Tie-Yan Liu. <br>
     NeurIPS 2022 [[pdf](https://arxiv.org/pdf/2212.12735)]
@@ -81,4 +84,4 @@ We must perceive in order to move, but we must also move in order to perceive.
 
 I hope to make a positive impact by conducting research that contributes meaningfully to society. My goal is to create knowledge and solutions that benefit the world and inspire others along the way.
 
-*Last update: 2025.7.28*
+*Last update: 2025.8.13*
