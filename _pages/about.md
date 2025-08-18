@@ -44,12 +44,12 @@ I'm now a researcher at Machine Learning Group, Microsoft Research (Asia) under 
 1. villa-X: Enhancing Latent Action Modeling in Vision-Language-Action Models <br>
    Arxiv 2025 [[pdf](https://arxiv.org/pdf/2507.23682)] [[code](https://microsoft.github.io/villa-x/)] [[website](https://microsoft.github.io/villa-x/)]
 1. PIG-Nav: Key Insights for Pretrained Image Goal Navigation Models <br>
-   Arxiv 2025 [[pdf](https://arxiv.org/pdf/2507.17220)] [[code]() (released soon)]
+   Arxiv 2025 [[pdf](https://arxiv.org/pdf/2507.17220)] [[demo](https://youtu.be/y6Eu7EVLhKA)] [[code]() (released soon)]
 1. What Do Latent Action Models Actually Learn? <br>
    Arxiv 2025 [[pdf](https://arxiv.org/pdf/2507.17220)]
 1. IG-Net: Image-Goal Network for Offline Visual Navigation on A Large-Scale Game Map <br>
     Baiting Zhu\*, **Pushi Zhang**\*, Xin-Qiang Cai\*, Li Zhao, Masashi Sugiyama, Jiang Bian. <br>
-    NeurIPS 2023 Robot Learning Workshop [[demo](https://www.youtube.com/watch?v=pOtnB_Rfciw)] [[pdf](https://www.robot-learning.ml/2023/files/paper32.pdf)]
+    NeurIPS 2023 Robot Learning Workshop [[pdf](https://www.robot-learning.ml/2023/files/paper32.pdf)] [[demo](https://www.youtube.com/watch?v=pOtnB_Rfciw)]
 1. Distributional Pareto-Optimal Multi-Objective Reinforcement Learning <br>
     Xin-Qiang Cai\*, **Pushi Zhang**\*, Li Zhao, Jiang Bian, Masashi Sugiyama, Ashley J. Llorens. <br>
     NeurIPS 2023 [[code](https://github.com/zpschang/DPMORL)] [[pdf](https://papers.nips.cc/paper_files/paper/2023/file/32285dd184dbfc33cb2d1f0db53c23c5-Paper-Conference.pdf)]
