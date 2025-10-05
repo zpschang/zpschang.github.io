@@ -19,6 +19,11 @@ strong {
   color: var(--global-text-color);
 }
 
+a strong,
+a b {
+  color: inherit;
+}
+
 body {
   font-weight: 400 !important; 
 }

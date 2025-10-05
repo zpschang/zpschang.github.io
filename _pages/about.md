@@ -23,70 +23,70 @@ Put your address / P.O. box / other info right below your picture. You can also 
 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.  -->
 
-*Researcher & AI Engineer*
+Researcher & AI Engineer
 
 [Google Scholar](https://scholar.google.com/citations?user=_DLMSkIAAAAJ&hl=en&oi=ao) \| Email: [zpschang@gmail.com](mailto:zpschang@gmail.com) \| Github: [zpschang](https://github.com/zpschang)
 
 ## About Me
 
-I am a researcher and AI engineer passionate about developing intelligent robotics systems that can perceive, understand, and interact with the physical world. Currently, I work at **X Square Robot**, where I focus on building advanced robotics systems that bridge the gap between AI research and real-world applications. 
+I am a researcher and AI engineer passionate about developing intelligent robotics systems that can perceive, understand, and interact with the physical world. 
 
-Previously, I was a researcher at **Microsoft Research Asia** in [Li Zhao](https://www.microsoft.com/en-us/research/people/lizo/)'s group, where I led the Vision-based Game-Testing AI project in collaboration with the Microsoft Xbox team. 
+Currently, I work at X Square Robot, where I focus on building advanced robotics systems that bridge the gap between AI research and real-world applications. 
+
+Previously, I was a researcher at Microsoft Research Asia in [Li Zhao](https://www.microsoft.com/en-us/research/people/lizo/)'s group, where I led the Vision-based Game-Testing AI project in collaboration with the Microsoft Xbox team. 
 
 ## Recent News
 
-- **Aug 2025**: Released [**Villa-X**](https://microsoft.github.io/villa-x/): Enhancing Latent Action Modeling in Vision-Language-Action Models
-- **Oct 2024**: Launched [**IGOR**](https://www.microsoft.com/en-us/research/project/igor-image-goal-representations/): Image-Goal Representations as Atomic Control Units for Foundation Models in Embodied AI
-- **Nov 2023**: Two papers accepted at NeurIPS 2023:
-  - [**Distributional Pareto-Optimal Multi-Objective Reinforcement Learning**](https://openreview.net/pdf?id=prIwYTU9PV) (NeurIPS 2023)
-  - [**IG-Net: Image-Goal Network for Offline Visual Navigation**](https://www.robot-learning.ml/2023/files/paper32.pdf) (NeurIPS Robot Learning Workshop) 
+- **Sep 2025**: Released codes and models of [PIG-Nav](https://github.com/zpschang/PIG-Nav), which achieves strong performance in image-goal navigations
+- **Aug 2025**: Released [Villa-X](https://microsoft.github.io/villa-x/): Enhancing Latent Action Modeling in Vision-Language-Action Models
+- **Oct 2024**: Released [IGOR](https://www.microsoft.com/en-us/research/project/igor-image-goal-representations/): Image-Goal Representations as Atomic Control Units for Foundation Models in Embodied AI
 
 
 ## Selected Publications
 
-- **Villa-X: Enhancing Latent Action Modeling in Vision-Language-Action Models**  
+- Villa-X: Enhancing Latent Action Modeling in Vision-Language-Action Models
   *arXiv 2025*  
   [[PDF](https://arxiv.org/pdf/2507.23682)] [[Code](https://microsoft.github.io/villa-x/)] [[Website](https://microsoft.github.io/villa-x/)]
 
-- **PIG-Nav: Key Insights for Pretrained Image Goal Navigation Models**  
+- PIG-Nav: Key Insights for Pretrained Image Goal Navigation Models
   *arXiv 2025*  
   [[PDF](https://arxiv.org/pdf/2507.17220)] [[Demo](https://youtu.be/y6Eu7EVLhKA)] [[Code](https://github.com/zpschang/PIG-Nav)]
 
-- **What Do Latent Action Models Actually Learn?**  
+- What Do Latent Action Models Actually Learn?
   *NeurIPS 2025*  
   [[PDF](https://arxiv.org/pdf/2507.17220)]
 
-- **IG-Net: Image-Goal Network for Offline Visual Navigation on A Large-Scale Game Map**  
+- IG-Net: Image-Goal Network for Offline Visual Navigation on A Large-Scale Game Map
   Baiting Zhu\*, **Pushi Zhang**\*, Xin-Qiang Cai\*, Li Zhao, Masashi Sugiyama, Jiang Bian  
   *NeurIPS 2023 Robot Learning Workshop*  
   [[PDF](https://www.robot-learning.ml/2023/files/paper32.pdf)] [[Demo](https://www.youtube.com/watch?v=pOtnB_Rfciw)]
 
-- **Distributional Pareto-Optimal Multi-Objective Reinforcement Learning**  
+- Distributional Pareto-Optimal Multi-Objective Reinforcement Learning 
   Xin-Qiang Cai\*, **Pushi Zhang**\*, Li Zhao, Jiang Bian, Masashi Sugiyama, Ashley J. Llorens  
   *NeurIPS 2023*  
   [[PDF](https://papers.nips.cc/paper_files/paper/2023/file/32285dd184dbfc33cb2d1f0db53c23c5-Paper-Conference.pdf)] [[Code](https://github.com/zpschang/DPMORL)]
 
-- **Asking Before Action: Gather Information in Embodied Decision Making with Language Models**  
+- Asking Before Action: Gather Information in Embodied Decision Making with Language Models
   Xiaoyu Chen, Shenao Zhang, **Pushi Zhang**, Li Zhao, Jianyu Chen  
   *arXiv 2023*  
   [[PDF](https://arxiv.org/pdf/2305.15695)]
 
-- **An Adaptive Deep RL Method for Non-Stationary Environments with Piecewise Stable Context**  
+- An Adaptive Deep RL Method for Non-Stationary Environments with Piecewise Stable Context
   Xiaoyu Chen, Xiangming Zhu, Yufeng Zheng, **Pushi Zhang**, Li Zhao, Wenxue Cheng, Peng Cheng, Yongqiang Xiong, Tao Qin, Jianyu Chen, Tie-Yan Liu  
   *NeurIPS 2022*  
   [[PDF](https://arxiv.org/pdf/2212.12735)]
 
-- **Distributional Reinforcement Learning for Multi-Dimensional Reward Functions**  
+- Distributional Reinforcement Learning for Multi-Dimensional Reward Functions
   **Pushi Zhang**, Xiaoyu Chen, Li Zhao, Wei Xiong, Tao Qin, Tie-Yan Liu  
   *NeurIPS 2021*  
   [[PDF](https://proceedings.neurips.cc/paper/2021/file/0b9e57c46de934cee33b0e8d1839bfc2-Paper.pdf)] [[Code](https://github.com/zpschang/MD3QN)]
 
-- **Independence-aware Advantage Estimation**  
+- Independence-aware Advantage Estimation
   **Pushi Zhang**, Li Zhao, Guoqing Liu, Jiang Bian, Minlie Huang, Tao Qin, Tie-Yan Liu  
   *IJCAI 2021*  
   [[PDF](https://www.ijcai.org/proceedings/2021/0461.pdf)]
 
-- **Demonstration Actor Critic**  
+- Demonstration Actor Critic
   Guoqing Liu, Li Zhao, **Pushi Zhang**, Jiang Bian, Tao Qin, Nenghai Yu, Tie-Yan Liu  
   *Neurocomputing 2021*  
   [[PDF](https://www.sciencedirect.com/science/article/abs/pii/S0925231220320282)]
