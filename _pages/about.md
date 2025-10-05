@@ -54,6 +54,9 @@ Previously, I was a researcher at Microsoft Research Asia in [Li Zhao](https://w
 - What Do Latent Action Models Actually Learn?  <br>
   *NeurIPS 2025*  [[PDF](https://arxiv.org/pdf/2507.17220)]
 
+- IGOR: Image-GOal Representations are the Atomic Control Units for Foundation Models in Embodied AI <br>
+  *Arxiv 2024*  [[PDF](https://arxiv.org/pdf/2411.00785)] [[Website](https://www.microsoft.com/en-us/research/project/igor-image-goal-representations/)]
+
 - IG-Net: Image-Goal Network for Offline Visual Navigation on A Large-Scale Game Map  <br>
   Baiting Zhu\*, **Pushi Zhang**\*, Xin-Qiang Cai\*, Li Zhao, Masashi Sugiyama, Jiang Bian  
   *NeurIPS 2023 Robot Learning Workshop*  [[PDF](https://www.robot-learning.ml/2023/files/paper32.pdf)] [[Demo](https://www.youtube.com/watch?v=pOtnB_Rfciw)]
