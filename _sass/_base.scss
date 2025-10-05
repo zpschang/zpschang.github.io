@@ -312,14 +312,18 @@ blockquote {
     display: flex;
     align-items: center;
     gap: 8px;
+    height: 100%;
     
     .nav-link {
-      padding: 0.25rem 0.5rem;
+      padding: 0.5rem 0.75rem;
       font-size: 0.875rem;
       color: var(--global-text-color);
       text-decoration: none;
       border-radius: 4px;
       transition: all 0.2s ease-in-out;
+      display: flex;
+      align-items: center;
+      height: 100%;
       
       &:hover {
         color: var(--global-hover-color);
@@ -337,6 +341,9 @@ blockquote {
       color: var(--global-text-color);
       opacity: 0.5;
       font-size: 0.875rem;
+      display: flex;
+      align-items: center;
+      height: 100%;
     }
   }
 }
