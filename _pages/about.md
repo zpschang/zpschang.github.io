@@ -23,13 +23,11 @@ Put your address / P.O. box / other info right below your picture. You can also 
 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.  -->
 
-Researcher at Microsoft Research
-
-[Google Scholar](https://scholar.google.com/citations?user=_DLMSkIAAAAJ&hl=en&oi=ao) \| Email: [pushizhang@microsoft.com](mailto:pushizhang@microsoft.com)
+[Google Scholar](https://scholar.google.com/citations?user=_DLMSkIAAAAJ&hl=en&oi=ao) \| Email: [zpschang@gmail.com](mailto:zpschang@gmail.com)
 
 ## Short Bio
 
-I'm now a researcher at Machine Learning Group, Microsoft Research (Asia) under [Li Zhao](https://www.microsoft.com/en-us/research/people/lizo/)'s group. My current research interests include reinforcement learning and foundation models for embodied AI. I was also responsible for the project of Vision-based Game-Testing AI, in collaboration with Microsoft XBox team. 
+I'm now working at X Square Robot, focusing on building intelligent robots that can interact with the physical world. Previously, I worked at Microsoft Research (Asia) under [Li Zhao](https://www.microsoft.com/en-us/research/people/lizo/)'s group.  I was responsible for the project of Vision-based Game-Testing AI, in collaboration with Microsoft XBox team. 
 
 ## News
 
@@ -44,9 +42,9 @@ I'm now a researcher at Machine Learning Group, Microsoft Research (Asia) under 
 1. villa-X: Enhancing Latent Action Modeling in Vision-Language-Action Models <br>
    Arxiv 2025 [[pdf](https://arxiv.org/pdf/2507.23682)] [[code](https://microsoft.github.io/villa-x/)] [[website](https://microsoft.github.io/villa-x/)]
 1. PIG-Nav: Key Insights for Pretrained Image Goal Navigation Models <br>
-   Arxiv 2025 [[pdf](https://arxiv.org/pdf/2507.17220)] [[demo](https://youtu.be/y6Eu7EVLhKA)] [[code]() (released soon)]
+   Arxiv 2025 [[pdf](https://arxiv.org/pdf/2507.17220)] [[demo](https://youtu.be/y6Eu7EVLhKA)] [[code](https://github.com/zpschang/PIG-Nav)]
 1. What Do Latent Action Models Actually Learn? <br>
-   Arxiv 2025 [[pdf](https://arxiv.org/pdf/2507.17220)]
+   NeurIPS 2025 [[pdf](https://arxiv.org/pdf/2507.17220)]
 1. IG-Net: Image-Goal Network for Offline Visual Navigation on A Large-Scale Game Map <br>
     Baiting Zhu\*, **Pushi Zhang**\*, Xin-Qiang Cai\*, Li Zhao, Masashi Sugiyama, Jiang Bian. <br>
     NeurIPS 2023 Robot Learning Workshop [[pdf](https://www.robot-learning.ml/2023/files/paper32.pdf)] [[demo](https://www.youtube.com/watch?v=pOtnB_Rfciw)]
@@ -84,4 +82,4 @@ We must perceive in order to move, but we must also move in order to perceive.
 
 I hope to make a positive impact by conducting research that contributes meaningfully to society. My goal is to create knowledge and solutions that benefit the world and inspire others along the way.
 
-*Last update: 2025.8.13*
+*Last update: 2025.10.5*
