@@ -27,7 +27,7 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 
 ## Short Bio
 
-I'm now working at X Square Robot, focusing on building intelligent robots that can interact with the physical world. Previously, I worked at Microsoft Research (Asia) under [Li Zhao](https://www.microsoft.com/en-us/research/people/lizo/)'s group.  I was responsible for the project of Vision-based Game-Testing AI, in collaboration with Microsoft XBox team. 
+I'm now working at X Square Robot, focusing on building intelligent robots that interact with the physical world. Previously, I worked at Microsoft Research (Asia) under [Li Zhao](https://www.microsoft.com/en-us/research/people/lizo/)'s group.  I was responsible for the project of Vision-based Game-Testing AI, in collaboration with Microsoft XBox team. 
 
 ## News
 
@@ -37,9 +37,9 @@ I'm now working at X Square Robot, focusing on building intelligent robots that 
 - 2023-11: Our paper [<i>Distributional Pareto-Optimal Multi-Objective Reinforcement Learning</i>](https://openreview.net/pdf?id=prIwYTU9PV) is accepted by NeurIPS 2023. Our paper [<i>IG-Net: Image-Goal Network for Offline Visual Navigation on A Large-Scale Game Map</i>](https://www.robot-learning.ml/2023/files/paper32.pdf) is accepted by Robot Learning Worshop at NeurIPS 2023. 
 
 
-## Publications
+## Publications and Projects
 
-1. villa-X: Enhancing Latent Action Modeling in Vision-Language-Action Models <br>
+1. Villa-X: Enhancing Latent Action Modeling in Vision-Language-Action Models <br>
    Arxiv 2025 [[pdf](https://arxiv.org/pdf/2507.23682)] [[code](https://microsoft.github.io/villa-x/)] [[website](https://microsoft.github.io/villa-x/)]
 1. PIG-Nav: Key Insights for Pretrained Image Goal Navigation Models <br>
    Arxiv 2025 [[pdf](https://arxiv.org/pdf/2507.17220)] [[demo](https://youtu.be/y6Eu7EVLhKA)] [[code](https://github.com/zpschang/PIG-Nav)]
