@@ -46,51 +46,41 @@ Previously, I was a researcher at Microsoft Research Asia in [Li Zhao](https://w
 ## Selected Publications
 
 - Villa-X: Enhancing Latent Action Modeling in Vision-Language-Action Models <br>
-  *arXiv 2025*  
-  [[PDF](https://arxiv.org/pdf/2507.23682)] [[Code](https://microsoft.github.io/villa-x/)] [[Website](https://microsoft.github.io/villa-x/)]
+  *arXiv 2025*  [[PDF](https://arxiv.org/pdf/2507.23682)] [[Code](https://microsoft.github.io/villa-x/)] [[Website](https://microsoft.github.io/villa-x/)]
 
 - PIG-Nav: Key Insights for Pretrained Image Goal Navigation Models  <br>
-  *arXiv 2025*  
-  [[PDF](https://arxiv.org/pdf/2507.17220)] [[Demo](https://youtu.be/y6Eu7EVLhKA)] [[Code](https://github.com/zpschang/PIG-Nav)]
+  *arXiv 2025*  [[PDF](https://arxiv.org/pdf/2507.17220)] [[Demo](https://youtu.be/y6Eu7EVLhKA)] [[Code](https://github.com/zpschang/PIG-Nav)]
 
 - What Do Latent Action Models Actually Learn?  <br>
-  *NeurIPS 2025*  
-  [[PDF](https://arxiv.org/pdf/2507.17220)]
+  *NeurIPS 2025*  [[PDF](https://arxiv.org/pdf/2507.17220)]
 
 - IG-Net: Image-Goal Network for Offline Visual Navigation on A Large-Scale Game Map  <br>
   Baiting Zhu\*, **Pushi Zhang**\*, Xin-Qiang Cai\*, Li Zhao, Masashi Sugiyama, Jiang Bian  
-  *NeurIPS 2023 Robot Learning Workshop*  
-  [[PDF](https://www.robot-learning.ml/2023/files/paper32.pdf)] [[Demo](https://www.youtube.com/watch?v=pOtnB_Rfciw)]
+  *NeurIPS 2023 Robot Learning Workshop*  [[PDF](https://www.robot-learning.ml/2023/files/paper32.pdf)] [[Demo](https://www.youtube.com/watch?v=pOtnB_Rfciw)]
 
 - Distributional Pareto-Optimal Multi-Objective Reinforcement Learning  <br>
   Xin-Qiang Cai\*, **Pushi Zhang**\*, Li Zhao, Jiang Bian, Masashi Sugiyama, Ashley J. Llorens  
-  *NeurIPS 2023*  
-  [[PDF](https://papers.nips.cc/paper_files/paper/2023/file/32285dd184dbfc33cb2d1f0db53c23c5-Paper-Conference.pdf)] [[Code](https://github.com/zpschang/DPMORL)]
+  *NeurIPS 2023*  [[PDF](https://papers.nips.cc/paper_files/paper/2023/file/32285dd184dbfc33cb2d1f0db53c23c5-Paper-Conference.pdf)] [[Code](https://github.com/zpschang/DPMORL)]
 
 - Asking Before Action: Gather Information in Embodied Decision Making with Language Models  <br>
   Xiaoyu Chen, Shenao Zhang, **Pushi Zhang**, Li Zhao, Jianyu Chen  
-  *arXiv 2023*  
-  [[PDF](https://arxiv.org/pdf/2305.15695)]
+  *arXiv 2023*  [[PDF](https://arxiv.org/pdf/2305.15695)]
 
 - An Adaptive Deep RL Method for Non-Stationary Environments with Piecewise Stable Context  <br>
   Xiaoyu Chen, Xiangming Zhu, Yufeng Zheng, **Pushi Zhang**, Li Zhao, Wenxue Cheng, Peng Cheng, Yongqiang Xiong, Tao Qin, Jianyu Chen, Tie-Yan Liu  
-  *NeurIPS 2022*  
-  [[PDF](https://arxiv.org/pdf/2212.12735)]
+  *NeurIPS 2022*  [[PDF](https://arxiv.org/pdf/2212.12735)]
 
 - Distributional Reinforcement Learning for Multi-Dimensional Reward Functions  <br>
   **Pushi Zhang**, Xiaoyu Chen, Li Zhao, Wei Xiong, Tao Qin, Tie-Yan Liu  
-  *NeurIPS 2021*  
-  [[PDF](https://proceedings.neurips.cc/paper/2021/file/0b9e57c46de934cee33b0e8d1839bfc2-Paper.pdf)] [[Code](https://github.com/zpschang/MD3QN)]
+  *NeurIPS 2021*  [[PDF](https://proceedings.neurips.cc/paper/2021/file/0b9e57c46de934cee33b0e8d1839bfc2-Paper.pdf)] [[Code](https://github.com/zpschang/MD3QN)]
 
 - Independence-aware Advantage Estimation  <br>
   **Pushi Zhang**, Li Zhao, Guoqing Liu, Jiang Bian, Minlie Huang, Tao Qin, Tie-Yan Liu  
-  *IJCAI 2021*  
-  [[PDF](https://www.ijcai.org/proceedings/2021/0461.pdf)]
+  *IJCAI 2021*  [[PDF](https://www.ijcai.org/proceedings/2021/0461.pdf)]
 
 - Demonstration Actor Critic  <br>
   Guoqing Liu, Li Zhao, **Pushi Zhang**, Jiang Bian, Tao Qin, Nenghai Yu, Tie-Yan Liu  
-  *Neurocomputing 2021*  
-  [[PDF](https://www.sciencedirect.com/science/article/abs/pii/S0925231220320282)]
+  *Neurocomputing 2021*  [[PDF](https://www.sciencedirect.com/science/article/abs/pii/S0925231220320282)]
 
 
 ## About Myself
