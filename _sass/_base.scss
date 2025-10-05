@@ -306,6 +306,39 @@ blockquote {
       }
     }
   }
+
+  // Language switcher styles
+  .language-switcher-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    
+    .nav-link {
+      padding: 0.25rem 0.5rem;
+      font-size: 0.875rem;
+      color: var(--global-text-color);
+      text-decoration: none;
+      border-radius: 4px;
+      transition: all 0.2s ease-in-out;
+      
+      &:hover {
+        color: var(--global-hover-color);
+        background-color: var(--global-bg-color);
+      }
+      
+      &.active {
+        color: var(--global-theme-color);
+        font-weight: 600;
+        background-color: rgba(var(--global-theme-color-rgb), 0.1);
+      }
+    }
+    
+    .separator {
+      color: var(--global-text-color);
+      opacity: 0.5;
+      font-size: 0.875rem;
+    }
+  }
 }
 
 .navbar-toggler {

@@ -104,6 +104,15 @@
                 </button>
               </li>
               {%- endif %}
+
+              <!-- Language Switcher -->
+              <li class="nav-item">
+                <div class="language-switcher-nav">
+                  <a href="{{ '/' | relative_url }}" class="nav-link {% if page.lang == 'en' or page.lang == nil %}active{% endif %}">EN</a>
+                  <span class="separator">|</span>
+                  <a href="{{ '/cn/' | relative_url }}" class="nav-link {% if page.lang == 'cn' %}active{% endif %}">中文</a>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
