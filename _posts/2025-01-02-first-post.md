@@ -9,6 +9,7 @@ related_posts: false
 # featured: true
 toc:
   sidebar: left
+hidden: true
 ---
 The plan for this blog is to summarize my learned knowledge, ideas and future expectations about Artificial Intelligence. 
 

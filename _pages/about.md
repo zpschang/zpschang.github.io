@@ -38,15 +38,15 @@ Previously, I was a researcher at Microsoft Research Asia in [Li Zhao](https://w
 
 ## Recent News
 
-- **Sep 2025**: Released codes and models of [PIG-Nav](https://github.com/zpschang/PIG-Nav), which achieves strong performance in image-goal navigations
-- **Aug 2025**: Released [Villa-X](https://microsoft.github.io/villa-x/): Enhancing Latent Action Modeling in Vision-Language-Action Models
-- **Oct 2024**: Released [IGOR](https://www.microsoft.com/en-us/research/project/igor-image-goal-representations/): Image-Goal Representations as Atomic Control Units for Foundation Models in Embodied AI
+- **Jan 2026**: Our paper *[Villa-X](https://microsoft.github.io/villa-x/): Enhancing Latent Action Modeling in Vision-Language-Action Models* is accepted by ICLR 2026
+- **Sep 2025**: Released codes and models of *[PIG-Nav](https://github.com/zpschang/PIG-Nav)*, which achieves strong performance in image-goal navigations
+- **Oct 2024**: Released *[IGOR](https://www.microsoft.com/en-us/research/project/igor-image-goal-representations/): Image-Goal Representations as Atomic Control Units for Foundation Models in Embodied AI*
 
 
 ## Selected Publications
 
 - Villa-X: Enhancing Latent Action Modeling in Vision-Language-Action Models <br>
-  *arXiv 2025*  [[PDF](https://arxiv.org/pdf/2507.23682)] [[Code](https://microsoft.github.io/villa-x/)] [[Website](https://microsoft.github.io/villa-x/)]
+  *ICLR 2026*  [[PDF](https://arxiv.org/pdf/2507.23682)] [[Code](https://microsoft.github.io/villa-x/)] [[Website](https://microsoft.github.io/villa-x/)]
 
 - PIG-Nav: Key Insights for Pretrained Image Goal Navigation Models  <br>
   *arXiv 2025*  [[PDF](https://arxiv.org/pdf/2507.17220)] [[Demo](https://youtu.be/y6Eu7EVLhKA)] [[Code](https://github.com/zpschang/PIG-Nav)]
