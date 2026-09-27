@@ -1,0 +1,20 @@
+# Education and Experience on the homepage (both languages). Newest first; end: present shows "Present" / "至今".
+education:
+  - start: "2020.09"
+    end: "2022.06"
+    en: M.S. in Computer and Information Science, University of Pennsylvania
+    zh: 宾夕法尼亚大学，计算机与信息科学硕士
+  - start: "2015.09"
+    end: "2019.06"
+    en: B.S. in Computer Science, Tsinghua University
+    zh: 清华大学，计算机科学学士
+
+experience:
+  - start: "2025.09"
+    end: present
+    en: Researcher, X Square Robot
+    zh: 自变量机器人，研究员
+  - start: "2022.06"
+    end: "2025.09"
+    en: Researcher, Machine Learning Group, Microsoft Research Asia
+    zh: 微软亚洲研究院机器学习组，研究员

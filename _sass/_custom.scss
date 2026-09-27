@@ -712,3 +712,14 @@ html[data-theme='dark'] .join-button:hover {
     margin-bottom: 0.35rem;
   }
 }
+
+// Education / Experience: same layout as News, wider date column for ranges.
+.news-list.timeline-list li {
+  grid-template-columns: 10.5rem minmax(0, 1fr);
+}
+
+@media (max-width: 575.98px) {
+  .news-list.timeline-list li {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

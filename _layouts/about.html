@@ -53,5 +53,11 @@ layout: default
           <p class="pubs-note">{{ t.equal }} · <a href="{{ '/publications/' | relative_url }}">{{ t.all_pubs }} &rarr;</a></p>
           {%- include selected_papers.html %}
           {%- endif %}
+
+          <h2 id="education">{{ t.education }}</h2>
+          {%- include timeline_list.html section="education" %}
+
+          <h2 id="experience">{{ t.experience }}</h2>
+          {%- include timeline_list.html section="experience" %}
         </article>
       </div>
