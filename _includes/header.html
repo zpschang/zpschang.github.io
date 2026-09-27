@@ -1,31 +1,16 @@
-
+{%- assign t = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
+{%- assign page_is_zh = false -%}
+{%- if page.lang == 'zh-CN' -%}{%- assign page_is_zh = true -%}{%- endif -%}
+{%- assign page_is_home = false -%}
+{%- if page.permalink == '/' or page.permalink == '/cn/' -%}{%- assign page_is_home = true -%}{%- endif %}
     <header>
 
       <!-- Nav Bar -->
       <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}">
         <div class="container">
-          {% if page.permalink != '/' -%}
-          <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
-            {%- if site.title == "blank" -%}
-              {%- if site.first_name -%}
-                <span class="font-weight-bold">{{- site.first_name -}}&nbsp;</span>
-              {%- endif -%}
-              {%- if site.middle_name -%}
-                {{- site.middle_name -}}&nbsp;
-              {%- endif -%}
-              {%- if site.last_name -%}
-                {{- site.last_name -}}
-              {%- endif -%}
-            {%- else -%}
-              {{- site.title -}}
-            {%- endif -%}
+          <a class="navbar-brand title font-weight-lighter{% if page_is_home %} brand-autohide{% endif %}" href="{% if page_is_zh %}{{ '/cn/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">
+            {%- if page_is_zh -%}张蒲石{%- else -%}{{ site.title }}{%- endif -%}
           </a>
-          {%- elsif site.enable_navbar_social -%}
-          <!-- Social Icons -->
-          <div class="navbar-brand social">
-            {% include social.html %}
-          </div>
-          {% endif %}
           <!-- Navbar Toggle -->
           <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -43,10 +28,10 @@
                 {% endif %}
               {% endfor %}
 
-              <!-- About -->
-              <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
-                <a class="nav-link" href="{{ '/' | relative_url }}">{{ about_title }}
-                  {%- if page.permalink == '/' -%}
+              <!-- About (home of the current language) -->
+              <li class="nav-item {% if page_is_home %}active{% endif %}">
+                <a class="nav-link" href="{% if page_is_zh %}{{ '/cn/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">{% if page_is_zh %}{{ t.home }}{% else %}{{ about_title }}{% endif %}
+                  {%- if page_is_home -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}
                 </a>
@@ -85,7 +70,7 @@
               </li>
               {%- else %}
               <li class="nav-item {% if page.title == p.title %}active{% endif %}">
-                <a class="nav-link" href="{{ p.url | relative_url }}">{{ p.title }}
+                <a class="nav-link" href="{{ p.url | relative_url }}">{% if page_is_zh and p.title_zh %}{{ p.title_zh }}{% else %}{{ p.title }}{% endif %}
                   {%- if page.title == p.title -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}
@@ -94,11 +79,20 @@
               {%- endif -%}
               {%- endif -%}
               {% endfor -%}
+
+              <!-- Language switch between the English (/) and Chinese (/cn/) homepages -->
+              <li class="nav-item lang-switch">
+                {%- if page_is_zh %}
+                <a class="nav-link" href="{{ '/' | relative_url }}" hreflang="en" lang="en" title="{{ t.switch_title }}">{{ t.switch_label }}</a>
+                {%- else %}
+                <a class="nav-link" href="{{ '/cn/' | relative_url }}" hreflang="zh-CN" lang="zh-CN" title="{{ t.switch_title }}">{{ t.switch_label }}</a>
+                {%- endif %}
+              </li>
               {%- if site.enable_darkmode %}
 
               <!-- Toogle theme mode -->
               <li class="toggle-container">
-                <button id="light-toggle" title="Change theme">
+                <button id="light-toggle" title="Change theme" aria-label="Toggle dark mode">
                   <i class="fas fa-moon"></i>
                   <i class="fas fa-sun"></i>
                 </button>

@@ -3,103 +3,34 @@ layout: about
 title: About
 permalink: /
 lang: en
-# subtitle: Researcher at Microsoft Research Asia. 
 
-# profile:
-#   align: right
-#   image: prof_pic.jpg
-#   image_circular: false # crops the image to make it circular
-#   more_info: >
-#     111
+# Header block (name, role, links, photo at assets/img/prof_pic.jpg)
+hero:
+  name: Pushi Zhang
+  name_alt: 张蒲石
+  role: Researcher
+  org: X Square Robot
+  org_url: https://x2robot.com/en
+  tagline: Building intelligence for the physical world.
 
-# news: true  # includes a list of news items
-# latest_posts: false  # includes a list of the newest posts
-# selected_papers: false # includes a list of papers marked as "selected={true}"
-# social: true  # includes social icons at the bottom of the page
+# Sections rendered after the text below (content lives in _data/featured.yml, _data/news.yml, _bibliography/papers.bib)
+featured_projects: true
+news: true
+selected_papers: true
 ---
-
-<!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.  -->
-
-Researcher & AI Engineer
-
-[Google Scholar](https://scholar.google.com/citations?user=_DLMSkIAAAAJ&hl=en&oi=ao) \| Email: [zpschang@gmail.com](mailto:zpschang@gmail.com) \| Github: [zpschang](https://github.com/zpschang)
 
 ## About Me
 
-I am a researcher and AI engineer passionate about developing intelligent robotics systems that can perceive, understand, and interact with the physical world. 
+I am a researcher and AI engineer building intelligent robotic systems that perceive, understand, and interact with the physical world. Specifically, I work on embodied and physical AI: training foundation models that combine general multimodal understanding with reliable real-world action.
 
-Currently, I work at X Square Robot, where I focus on building advanced robotics systems that bridge the gap between AI research and real-world applications. 
+Currently, I work at [X Square Robot](https://x2robot.com/en), where I am a core contributor to:
 
-Previously, I was a researcher at Microsoft Research Asia in [Li Zhao](https://www.microsoft.com/en-us/research/people/lizo/)'s group, where I led the Vision-based Game-Testing AI project in collaboration with the Microsoft Xbox team. 
+- **[Wall-OSS-0.5](#wall-oss-0-5)** — our open-source 4B vision-language-action foundation model, whose pretrained checkpoint already completes real-robot manipulation tasks before any task-specific fine-tuning;
+- **[WALL-B logistics sorting](#wall-b-logistics)** — fully autonomous sorting of real-world parcels, deployed in live production;
+- **[TwinDEX](#twindex)** — a co-designed wearable and robotic hand system.
 
-## Recent News
+I have also contributed to [X-Tokenizer](#x-tokenizer) and [WALL-WM](#wall-wm).
 
-- **Jan 2026**: Our paper *[Villa-X](https://microsoft.github.io/villa-x/): Enhancing Latent Action Modeling in Vision-Language-Action Models* is accepted by ICLR 2026
-- **Sep 2025**: Released codes and models of *[PIG-Nav](https://github.com/zpschang/PIG-Nav)*, which achieves strong performance in image-goal navigations
-- **Oct 2024**: Released *[IGOR](https://www.microsoft.com/en-us/research/project/igor-image-goal-representations/): Image-Goal Representations as Atomic Control Units for Foundation Models in Embodied AI*
+Previously, I was a researcher at Microsoft Research Asia in [Li Zhao](https://www.microsoft.com/en-us/research/people/lizo/)'s group, where I worked on reinforcement learning and embodied foundation models (latent action models, VLA, visual navigation) and led the Vision-based Game-Testing AI project in collaboration with the Microsoft Xbox team.
 
-
-## Selected Publications
-
-- Villa-X: Enhancing Latent Action Modeling in Vision-Language-Action Models <br>
-  *ICLR 2026*  [[PDF](https://arxiv.org/pdf/2507.23682)] [[Code](https://microsoft.github.io/villa-x/)] [[Website](https://microsoft.github.io/villa-x/)]
-
-- PIG-Nav: Key Insights for Pretrained Image Goal Navigation Models  <br>
-  *arXiv 2025*  [[PDF](https://arxiv.org/pdf/2507.17220)] [[Demo](https://youtu.be/y6Eu7EVLhKA)] [[Code](https://github.com/zpschang/PIG-Nav)]
-
-- What Do Latent Action Models Actually Learn?  <br>
-  *NeurIPS 2025*  [[PDF](https://arxiv.org/pdf/2507.17220)]
-
-- IGOR: Image-GOal Representations are the Atomic Control Units for Foundation Models in Embodied AI <br>
-  *Arxiv 2024*  [[PDF](https://arxiv.org/pdf/2411.00785)] [[Website](https://www.microsoft.com/en-us/research/project/igor-image-goal-representations/)]
-
-- IG-Net: Image-Goal Network for Offline Visual Navigation on A Large-Scale Game Map  <br>
-  Baiting Zhu\*, **Pushi Zhang**\*, Xin-Qiang Cai\*, Li Zhao, Masashi Sugiyama, Jiang Bian  
-  *NeurIPS 2023 Robot Learning Workshop*  [[PDF](https://www.robot-learning.ml/2023/files/paper32.pdf)] [[Demo](https://www.youtube.com/watch?v=pOtnB_Rfciw)]
-
-- Distributional Pareto-Optimal Multi-Objective Reinforcement Learning  <br>
-  Xin-Qiang Cai\*, **Pushi Zhang**\*, Li Zhao, Jiang Bian, Masashi Sugiyama, Ashley J. Llorens  
-  *NeurIPS 2023*  [[PDF](https://papers.nips.cc/paper_files/paper/2023/file/32285dd184dbfc33cb2d1f0db53c23c5-Paper-Conference.pdf)] [[Code](https://github.com/zpschang/DPMORL)]
-
-- Asking Before Action: Gather Information in Embodied Decision Making with Language Models  <br>
-  Xiaoyu Chen, Shenao Zhang, **Pushi Zhang**, Li Zhao, Jianyu Chen  
-  *arXiv 2023*  [[PDF](https://arxiv.org/pdf/2305.15695)]
-
-- An Adaptive Deep RL Method for Non-Stationary Environments with Piecewise Stable Context  <br>
-  Xiaoyu Chen, Xiangming Zhu, Yufeng Zheng, **Pushi Zhang**, Li Zhao, Wenxue Cheng, Peng Cheng, Yongqiang Xiong, Tao Qin, Jianyu Chen, Tie-Yan Liu  
-  *NeurIPS 2022*  [[PDF](https://arxiv.org/pdf/2212.12735)]
-
-- Distributional Reinforcement Learning for Multi-Dimensional Reward Functions  <br>
-  **Pushi Zhang**, Xiaoyu Chen, Li Zhao, Wei Xiong, Tao Qin, Tie-Yan Liu  
-  *NeurIPS 2021*  [[PDF](https://proceedings.neurips.cc/paper/2021/file/0b9e57c46de934cee33b0e8d1839bfc2-Paper.pdf)] [[Code](https://github.com/zpschang/MD3QN)]
-
-- Independence-aware Advantage Estimation  <br>
-  **Pushi Zhang**, Li Zhao, Guoqing Liu, Jiang Bian, Minlie Huang, Tao Qin, Tie-Yan Liu  
-  *IJCAI 2021*  [[PDF](https://www.ijcai.org/proceedings/2021/0461.pdf)]
-
-- Demonstration Actor Critic  <br>
-  Guoqing Liu, Li Zhao, **Pushi Zhang**, Jiang Bian, Tao Qin, Nenghai Yu, Tie-Yan Liu  
-  *Neurocomputing 2021*  [[PDF](https://www.sciencedirect.com/science/article/abs/pii/S0925231220320282)]
-
-
-## About Myself
-
-I hope to make a positive impact by conducting research that contributes meaningfully to society. My goal is to create knowledge and solutions that benefit the world and inspire others along the way.
-
----
-
-*Last update: 2025.10.5*
-
-<!-- ## Our environment for Visual Navigation -->
-<!-- <blockquote>
-We must perceive in order to move, but we must also move in order to perceive. 
-</blockquote> -->
-
-<!-- <blockquote>
-    We do not grow absolutely, chronologically. We grow sometimes in one dimension, and not in another, unevenly. We grow partially. We are relative. We are mature in one realm, childish in another.
-    —Anais Nin
-</blockquote> -->
+More broadly, I hope my research leads to robots that are genuinely useful in people's everyday lives.

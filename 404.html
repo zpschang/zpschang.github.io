@@ -2,8 +2,15 @@
 layout: page
 permalink: /404.html
 title: "Page not found"
-description: "Looks like there has been a mistake. Nothing exists here."
-redirect: true
+description: "Sorry, this page does not exist. 抱歉，这个页面不存在。"
+sitemap: false
 ---
 
-<p>You will be redirected to the main page within 3 seconds. If not redirected, please go back to the <a href="{{ site.baseurl }}/">home page</a>.</p>
+<div class="notfound">
+  <p>The page you are looking for may have moved. 你要找的页面可能已经移动或删除。</p>
+  <p class="notfound-links">
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <a href="{{ '/cn/' | relative_url }}" lang="zh-CN">中文主页</a>
+    <a href="{{ '/publications/' | relative_url }}">Publications</a>
+  </p>
+</div>

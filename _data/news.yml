@@ -1,0 +1,28 @@
+# Homepage news, shared by the English (/) and Chinese (/cn/) pages. Newest first; `en` / `zh` accept Markdown.
+- date: 2026-09-02
+  en: Introduced [TwinDEX](https://x2robot.com/en/pages/twindex), a co-designed wearable and robotic hand system for learning dexterous manipulation from robot-free demonstrations.
+  zh: 发布 [TwinDEX](https://x2robot.com/pages/twindex)：协同设计的可穿戴采集装置与机器人灵巧手，从无本体示教数据中学习灵巧操作。
+
+- date: 2026-08-12
+  en: "Sorted real-world parcels fully autonomously with our WALL-B model in a [global livestream](https://x2robot.com/en/news/6a7d67be4dd82e1d55074f8a): 1,816 parcels per hour at over 98% accuracy."
+  zh: "WALL-B 模型在[全球直播](https://x2robot.com/en/news/6a7d67be4dd82e1d55074f8a)中全自主分拣真实物流包裹：1816 件/小时，准确率超过 98%。"
+
+- date: 2026-06-07
+  en: Released [X-Tokenizer](https://x-square-robot.github.io/X-Tokenizer_projectPage/), a multimodal action tokenizer for VLA pretraining, and [WALL-WM](https://arxiv.org/abs/2606.01955), a world action model built on semantic action events.
+  zh: 发布 [X-Tokenizer](https://x-square-robot.github.io/X-Tokenizer_projectPage/)（面向 VLA 预训练的多模态动作分词器）与 [WALL-WM](https://arxiv.org/abs/2606.01955)（以语义动作事件为学习单元的世界动作模型）。
+
+- date: 2026-05-29
+  en: Open-sourced [Wall-OSS-0.5](https://x2robot.com/en/oss), our 4B vision-language-action foundation model, with the [technical report](https://arxiv.org/abs/2605.30877), [code](https://github.com/X-Square-Robot/wall-x), and [model weights](https://huggingface.co/x-square-robot/wall-oss-0.5).
+  zh: 开源 4B 视觉-语言-动作基础模型 [Wall-OSS-0.5](https://x2robot.com/oss)，同步发布[技术报告](https://arxiv.org/abs/2605.30877)、[代码](https://github.com/X-Square-Robot/wall-x)与[模型权重](https://huggingface.co/x-square-robot/wall-oss-0.5)。
+
+- date: 2026-01-26
+  en: Our paper [villa-X](https://microsoft.github.io/villa-x/) is accepted by ICLR 2026.
+  zh: 论文 [villa-X](https://microsoft.github.io/villa-x/) 被 ICLR 2026 接收。
+
+- date: 2025-09-01
+  en: Released code and models of [PIG-Nav](https://github.com/zpschang/PIG-Nav), which achieves strong performance in image-goal navigation.
+  zh: 开源 [PIG-Nav](https://github.com/zpschang/PIG-Nav) 的代码与模型，在图像目标导航任务上取得优异表现。
+
+- date: 2024-10-17
+  en: "Released [IGOR](https://www.microsoft.com/en-us/research/project/igor-image-goal-representations/): Image-GOal Representations are the Atomic Control Units for Foundation Models in Embodied AI."
+  zh: 发布 [IGOR](https://www.microsoft.com/en-us/research/project/igor-image-goal-representations/)：以图像目标表示作为具身 AI 基础模型的原子控制单元。

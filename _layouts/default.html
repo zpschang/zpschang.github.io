@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang }}">
+<html lang="{{ page.lang | default: site.lang }}">
 
   <!-- Head -->
   <head>
@@ -59,5 +59,6 @@
     {% include scripts/analytics.html %}
     {% include scripts/progressBar.html %}
     {% include scripts/wechatModal.html %}
+    <script defer src="{{ '/assets/js/site.js' | relative_url | bust_file_cache }}"></script>
   </body>
 </html>

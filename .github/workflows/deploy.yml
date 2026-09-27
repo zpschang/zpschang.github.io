@@ -16,34 +16,25 @@ permissions:
 
 jobs:
   deploy:
-    # available images: https://github.com/actions/runner-images#available-images
-    runs-on: ubuntu-latest
+    # Pinned: ubuntu-latest moves to 26.04 from Oct 2026, which has no prebuilt Ruby 3.2.2.
+    runs-on: ubuntu-24.04
     steps:
     - name: Checkout 🛎️
-      uses: actions/checkout@v3
+      uses: actions/checkout@v5
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.2.2'
+        ruby-version: '3.2'
         bundler-cache: true
-    - name: Update _config.yml ⚙️
-      uses: fjogeleit/yaml-update-action@v0.13.1
-      with:
-        commitChange: false
-        valueFile: '_config.yml'
-        propertyPath: 'giscus.repo'
-        value: ${{ github.repository }}
     - name: Install and Build 🔧
       run: |
-        pip3 install --upgrade jupyter
-        npm install -g mermaid.cli
         npm install -g purgecss
         export JEKYLL_ENV=production
-        bundle exec jekyll build --lsi
+        bundle exec jekyll build
         purgecss -c purgecss.config.js
+        touch _site/.nojekyll
     - name: Deploy 🚀
       if: github.event_name != 'pull_request'
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         folder: _site
-

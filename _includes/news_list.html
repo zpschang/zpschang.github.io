@@ -1,0 +1,11 @@
+{%- comment -%} News from _data/news.yml; picks the page language. {%- endcomment -%}
+{%- assign zh = false -%}
+{%- if page.lang == 'zh-CN' -%}{%- assign zh = true -%}{%- endif -%}
+<ul class="news-list">
+  {%- for n in site.data.news %}
+  <li>
+    <span class="news-date">{% if zh %}{{ n.date | date: "%Y.%m" }}{% else %}{{ n.date | date: "%b %Y" }}{% endif %}</span>
+    <span class="news-text">{% if zh %}{{ n.zh | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% else %}{{ n.en | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% endif %}</span>
+  </li>
+  {%- endfor %}
+</ul>

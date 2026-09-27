@@ -3,15 +3,10 @@
 
     <!-- Bootstrap & MDB -->
     <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url | bust_file_cache }}">
-    <!-- <link rel="stylesheet" href="{{ '/assets/css/mdb.min.css' | relative_url | bust_file_cache }}"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@{{ site.mdb.version }}/css/mdb.min.css" integrity="{{ site.mdb.integrity.css }}" crossorigin="anonymous" />
-
-    <!-- Bootstrap Table -->
-    <link defer rel="stylesheet" href="https://unpkg.com/bootstrap-table@{{ site.bootstrap-table.version }}/dist/bootstrap-table.min.css">
+    <link rel="stylesheet" href="{{ '/assets/css/mdb.min.css' | relative_url | bust_file_cache }}">
 
     <!-- Fonts & Icons -->
     <link rel="stylesheet" href="{{ '/assets/css/academicons.min.css' | relative_url | bust_file_cache }}">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
 
     <!-- Code Syntax Highlighting -->
     <link rel="stylesheet" href="{{ '/assets/css/jekyll-pygments-themes-github.css' | relative_url | bust_file_cache }}" media="" id="highlight_theme_light" />
@@ -29,6 +24,28 @@
     {% endif %}
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url | bust_css_cache }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+    {%- if page.permalink == '/' or page.permalink == '/cn/' %}
+    <link rel="alternate" hreflang="en" href="{{ '/' | absolute_url }}">
+    <link rel="alternate" hreflang="zh-CN" href="{{ '/cn/' | absolute_url }}">
+    <link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Pushi Zhang",
+      "alternateName": "张蒲石",
+      "url": {{ '/' | absolute_url | jsonify }},
+      "image": {{ '/assets/img/prof_pic.jpg' | absolute_url | jsonify }},
+      "jobTitle": "Researcher",
+      "worksFor": { "@type": "Organization", "name": "X Square Robot", "url": "https://x2robot.com/en" },
+      "knowsAbout": ["Embodied AI", "Physical AI", "Vision-Language-Action models", "Robot foundation models", "Reinforcement learning"],
+      "sameAs": [
+        "https://scholar.google.com/citations?user={{ site.scholar_userid }}",
+        "https://github.com/{{ site.github_username }}"
+      ]
+    }
+    </script>
+    {%- endif %}
 
     <!-- Dark Mode -->
     {% if site.enable_darkmode %}
