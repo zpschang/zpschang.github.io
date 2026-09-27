@@ -7,17 +7,20 @@ en:
   all_pubs: Full publication list
   equal: "* Equal contribution"
   email: Email
-  join_title: Join Me
+  join_title: Join Us
   join_body: |
-    I'm looking for motivated interns to work with me on embodied AI. You'll be a great fit if you:
+    I hope to work with exceptional people who share the vision of physical AGI, as interns or full-time colleagues. I especially value:
 
-    - are fluent with frontier LLMs and agents, and build agent-friendly pipelines that automate your own workflows;
-    - understand embodied data pipelines end to end;
-    - have research intuition for frontier embodied AI and strong math skills.
+    - **Frontier AI fluency** — deep command of frontier LLMs and agents, and the engineering to build agent-native pipelines that automate physical-AI research and data workflows;
+    - **Embodied data expertise** — mastery of the full embodied data stack, from collection and quality control to training, built into rigorous, reproducible systems;
+    - **Research depth** — genuine depth in a chosen area, and the judgment to identify and rigorously test the questions that matter on the path to physical AGI;
+    - **Strong foundations** — solid mathematics and excellent programming.
 
-    Interested? Email me your CV and something you've built.
-  join_button: Email me
-  join_subject: Internship inquiry
+    If you are interested, or would like to exchange ideas, feel free to reach out.
+  join_button: Get in touch
+  join_more: Learn more
+  join_url: /join/
+  join_subject: Collaboration
   last_updated: Last updated
   built_with: Built with <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/alshedivat/al-folio">al-folio</a>, hosted on <a href="https://pages.github.com/">GitHub Pages</a>.
   switch_label: 中文
@@ -33,15 +36,18 @@ zh-CN:
   email: 邮箱
   join_title: 加入我们
   join_body: |
-    我在招募有热情的实习生，一起做具身智能。希望你：
+    我希望与认同 Physical AGI 愿景的优秀伙伴合作，实习、全职均可。我尤其看重：
 
-    - 熟练使用前沿 LLM 与 Agent，能搭建对 Agent 友好的管线，实现系统自动化；
-    - 理解具身数据的完整链路；
-    - 对具身前沿有研究直觉，数学基础扎实。
+    - **前沿 AI 能力**：深入掌握前沿 LLM 与 Agent，并能将其工程化为 Agent 原生的管线，自动化物理 AI 的研究与数据流程；
+    - **具身数据能力**：精通具身数据从采集、质量控制到训练的全链路，并将其构建为严谨、可复现的系统；
+    - **研究深度**：在某个方向上有深入的积累，能识别通往物理 AGI 道路上的关键问题，并以严谨的实验加以验证；
+    - **扎实基础**：数学功底扎实，编程能力出色。
 
-    感兴趣的话，欢迎把简历和你做过的东西发到我的邮箱。
-  join_button: 发邮件给我
-  join_subject: 实习申请
+    如果你有意愿，或者希望交流，欢迎联系我。
+  join_button: 联系我
+  join_more: 了解更多
+  join_url: /cn/join/
+  join_subject: 合作交流
   last_updated: 最后更新
   built_with: 基于 <a href="https://jekyllrb.com/">Jekyll</a> 与 <a href="https://github.com/alshedivat/al-folio">al-folio</a> 构建，托管于 <a href="https://pages.github.com/">GitHub Pages</a>。
   switch_label: EN

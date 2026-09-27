@@ -80,12 +80,12 @@
               {%- endif -%}
               {% endfor -%}
 
-              <!-- Language switch between the English (/) and Chinese (/cn/) homepages -->
+              <!-- Language switch: the page's counterpart (alt_url), else the other homepage -->
               <li class="nav-item lang-switch">
                 {%- if page_is_zh %}
-                <a class="nav-link" href="{{ '/' | relative_url }}" hreflang="en" lang="en" title="{{ t.switch_title }}">{{ t.switch_label }}</a>
+                <a class="nav-link" href="{{ page.alt_url | default: '/' | relative_url }}" hreflang="en" lang="en" title="{{ t.switch_title }}">{{ t.switch_label }}</a>
                 {%- else %}
-                <a class="nav-link" href="{{ '/cn/' | relative_url }}" hreflang="zh-CN" lang="zh-CN" title="{{ t.switch_title }}">{{ t.switch_label }}</a>
+                <a class="nav-link" href="{{ page.alt_url | default: '/cn/' | relative_url }}" hreflang="zh-CN" lang="zh-CN" title="{{ t.switch_title }}">{{ t.switch_label }}</a>
                 {%- endif %}
               </li>
               {%- if site.enable_darkmode %}

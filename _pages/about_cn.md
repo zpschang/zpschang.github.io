@@ -5,6 +5,7 @@ head_title: 张蒲石 (Pushi Zhang)
 description: 张蒲石（Pushi Zhang），自变量机器人研究员，关注具身智能与物理 AI 领域中通用多模态能力与执行能力的构建，以及基础模型的训练。
 permalink: /cn/
 lang: zh-CN
+alt_url: /
 
 hero:
   name: 张蒲石
@@ -33,4 +34,4 @@ selected_papers: true
 
 此前，我在微软亚洲研究院[赵立](https://www.microsoft.com/en-us/research/people/lizo/)研究员的团队工作，从事强化学习与具身基础模型（潜在动作模型、VLA、视觉导航）研究。
 
-更长远地，我希望推动物理智能的发展，提升社会生产力与物质资源的利用效率，让它的成果惠及整个社会。
+更长远地，我希望我的研究能够惠及整个社会。
