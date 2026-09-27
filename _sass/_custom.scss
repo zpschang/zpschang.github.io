@@ -623,3 +623,50 @@ body.sticky-bottom-footer {
     margin-bottom: 0.35rem;
   }
 }
+
+// ---------------------------------------------------------------- Join Me (internship call)
+
+.join-card {
+  padding: 1rem 1.25rem 1.2rem;
+  border: 1px solid var(--global-divider-color);
+  border-left: 4px solid var(--global-theme-color);
+  border-radius: 8px;
+  background: rgba(26, 95, 180, 0.04);
+
+  p:first-child {
+    margin-top: 0;
+  }
+}
+
+html[data-theme='dark'] .join-card {
+  background: rgba(122, 182, 240, 0.06);
+}
+
+.join-card .join-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 0.15rem;
+  padding: 0.4rem 1.1rem;
+  border-radius: 999px;
+  background: var(--global-theme-color);
+  color: #ffffff;
+  font-weight: 500;
+  transition: filter 0.15s;
+
+  i {
+    color: inherit;
+  }
+
+  &:hover {
+    color: #ffffff;
+    text-decoration: none;
+    filter: brightness(1.1);
+  }
+}
+
+// Light-blue accent in dark mode needs dark text for contrast.
+html[data-theme='dark'] .join-card .join-button,
+html[data-theme='dark'] .join-card .join-button:hover {
+  color: #10233a;
+}

@@ -31,6 +31,6 @@ selected_papers: true
 
 我还参与了 [X-Tokenizer](#x-tokenizer) 和 [WALL-WM](#wall-wm) 等工作。
 
-此前，我在微软亚洲研究院[赵立](https://www.microsoft.com/en-us/research/people/lizo/)研究员的团队工作，从事强化学习与具身基础模型（潜在动作模型、VLA、视觉导航）研究，并主导与微软 Xbox 团队合作的基于视觉的游戏测试 AI 项目。
+此前，我在微软亚洲研究院[赵立](https://www.microsoft.com/en-us/research/people/lizo/)研究员的团队工作，从事强化学习与具身基础模型（潜在动作模型、VLA、视觉导航）研究。
 
 更长远地，我希望推动物理智能的发展，提升社会生产力与物质资源的利用效率，让它的成果惠及整个社会。

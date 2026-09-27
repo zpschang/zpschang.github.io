@@ -31,6 +31,6 @@ Currently, I work at [X Square Robot](https://x2robot.com/en), where I am a core
 
 I have also contributed to [X-Tokenizer](#x-tokenizer) and [WALL-WM](#wall-wm).
 
-Previously, I was a researcher at Microsoft Research Asia in [Li Zhao](https://www.microsoft.com/en-us/research/people/lizo/)'s group, where I worked on reinforcement learning and embodied foundation models (latent action models, VLA, visual navigation) and led the Vision-based Game-Testing AI project in collaboration with the Microsoft Xbox team.
+Previously, I was a researcher at Microsoft Research Asia in [Li Zhao](https://www.microsoft.com/en-us/research/people/lizo/)'s group, where I worked on reinforcement learning and embodied foundation models (latent action models, VLA, visual navigation).
 
 More broadly, I hope to help build physical intelligence that raises society's productivity and the efficiency with which we use material resources, so that its benefits reach society as a whole.

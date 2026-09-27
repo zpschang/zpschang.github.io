@@ -7,9 +7,17 @@ en:
   all_pubs: Full publication list
   equal: "* Equal contribution"
   email: Email
-  contact_title: Contact
-  contact_text: I'm always happy to chat about research, collaboration, or opportunities at X Square Robot. Reach me at
-  contact_end: .
+  join_title: Join Me
+  join_body: |
+    I'm looking for motivated interns to work with me on embodied AI. You'll be a great fit if you:
+
+    - are fluent with frontier LLMs and agents, and build agent-friendly pipelines that automate your own workflows;
+    - understand embodied data pipelines end to end;
+    - have research intuition for frontier embodied AI and strong math skills.
+
+    Interested? Email me your CV and something you've built.
+  join_button: Email me
+  join_subject: Internship inquiry
   last_updated: Last updated
   built_with: Built with <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/alshedivat/al-folio">al-folio</a>, hosted on <a href="https://pages.github.com/">GitHub Pages</a>.
   switch_label: 中文
@@ -23,9 +31,17 @@ zh-CN:
   all_pubs: 全部论文
   equal: "* 同等贡献"
   email: 邮箱
-  contact_title: 联系方式
-  contact_text: 欢迎通过邮件交流研究想法、合作，或了解自变量机器人的机会：
-  contact_end: ""
+  join_title: 加入我们
+  join_body: |
+    我在招募有热情的实习生，一起做具身智能。希望你：
+
+    - 熟练使用前沿 LLM 与 Agent，能搭建对 Agent 友好的管线，实现系统自动化；
+    - 理解具身数据的完整链路；
+    - 对具身前沿有研究直觉，数学基础扎实。
+
+    感兴趣的话，欢迎把简历和你做过的东西发到我的邮箱。
+  join_button: 发邮件给我
+  join_subject: 实习申请
   last_updated: 最后更新
   built_with: 基于 <a href="https://jekyllrb.com/">Jekyll</a> 与 <a href="https://github.com/alshedivat/al-folio">al-folio</a> 构建，托管于 <a href="https://pages.github.com/">GitHub Pages</a>。
   switch_label: EN

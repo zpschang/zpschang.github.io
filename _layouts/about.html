@@ -29,6 +29,12 @@ layout: default
         <article>
           {{ content }}
 
+          <h2 id="join">{{ t.join_title }}</h2>
+          <div class="join-card">
+            {{ t.join_body | markdownify }}
+            <a class="join-button" href="mailto:{{ site.email | encode_email }}?subject={{ t.join_subject | uri_escape }}"><i class="fas fa-envelope"></i> {{ t.join_button }}</a>
+          </div>
+
           {% if page.featured_projects -%}
           <h2 id="projects">{{ t.projects }}</h2>
           {%- include featured_projects.html %}
@@ -44,8 +50,5 @@ layout: default
           <p class="pubs-note">{{ t.equal }} · <a href="{{ '/publications/' | relative_url }}">{{ t.all_pubs }} &rarr;</a></p>
           {%- include selected_papers.html %}
           {%- endif %}
-
-          <h2 id="contact">{{ t.contact_title }}</h2>
-          <p>{{ t.contact_text }} <a href="mailto:{{ site.email | encode_email }}">{{ site.email }}</a>{{ t.contact_end }}</p>
         </article>
       </div>
