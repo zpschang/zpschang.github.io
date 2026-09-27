@@ -17,6 +17,7 @@
       <p class="project-desc">{% if zh %}{{ p.desc_zh }}{% else %}{{ p.desc_en }}{% endif %}</p>
       <div class="project-links">
         {%- for l in p.links %}
+        {%- if zh and l.en_only %}{% continue %}{% endif %}
         <a href="{% if zh and l.url_zh %}{{ l.url_zh }}{% else %}{{ l.url }}{% endif %}">{% if zh %}{{ l.label_zh | default: l.label }}{% else %}{{ l.label }}{% endif %}</a>
         {%- endfor %}
       </div>

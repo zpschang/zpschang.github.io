@@ -1,5 +1,6 @@
 # "Featured Work" cards on the homepage, shared by the English and Chinese pages.
-# wide: true renders a full-width card; role_* adds a small badge; name_zh / url_zh override the name / a link on the Chinese page.
+# wide: true renders a full-width card; role_* adds a small badge; name_zh / url_zh override the name / a link on the Chinese page;
+# en_only: true shows a link on the English page only.
 - key: wall-oss-0-5
   name: Wall-OSS-0.5
   image: wall-oss-0.5.jpg
@@ -24,7 +25,8 @@
   desc_en: "Our WALL-B embodied foundation model drives two robot arms to sort highly variable real-world parcels fully autonomously: 1,816 parcels per hour at over 98% accuracy in a public livestream, and now deployed on a live production line with a leading logistics company."
   desc_zh: "WALL-B 具身基础模型驱动双臂，全自主分拣大小、形状、材质各异的真实物流包裹：全球直播中分拣效率达 1816 件/小时、准确率超过 98%，并已与头部物流企业合作部署到真实产线。"
   links:
-    - { label: News, label_zh: 新闻, url: "https://x2robot.com/en/news/6a7d67be4dd82e1d55074f8a", url_zh: "https://app.xinhuanet.com/news/article.html?articleId=202608190d3ab99534664047b0e72a302c1e4731" }
+    - { label: News, label_zh: 新华网, url: "https://x2robot.com/en/news/6a7d67be4dd82e1d55074f8a", url_zh: "https://www.news.cn/finance/20260813/2230507fa54140d0aee9074f9b2c0246/c.html" }
+    - { label: Xinhua, url: "https://www.news.cn/finance/20260813/2230507fa54140d0aee9074f9b2c0246/c.html", en_only: true }
 
 - key: twindex
   name: TwinDEX
