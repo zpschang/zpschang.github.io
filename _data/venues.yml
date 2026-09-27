@@ -24,6 +24,11 @@
   url: https://arxiv.org/
   color: "#3f5f7a"
 
+"Preprint":
+  name: Preprint (arXiv)
+  url: https://arxiv.org/
+  color: "#5f6b76"
+
 "arXiv":
   name: arXiv preprint
   url: https://arxiv.org/
