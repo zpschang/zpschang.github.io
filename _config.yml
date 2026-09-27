@@ -16,6 +16,7 @@ footer_text: >
 keywords: Pushi Zhang, 张蒲石, embodied AI, physical AI, vision-language-action, VLA, robot foundation models, robotics, X Square Robot, Wall-OSS
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
+timezone: Asia/Shanghai # dates (e.g. "Last updated") use Beijing time, not the build server's UTC
 icon: favicon.png # browser tab icon in assets/img/
 
 url: https://zpschang.github.io # the base hostname & protocol for your site
