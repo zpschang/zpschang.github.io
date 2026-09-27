@@ -1,7 +1,7 @@
 # Homepage news, shared by the English (/) and Chinese (/cn/) pages. Newest first; `en` / `zh` accept Markdown.
 - date: 2026-09-02
-  en: X Square Robot introduced [TwinDEX](https://x2robot.com/en/pages/twindex), a co-designed wearable and robotic dexterous hand system for learning manipulation from robot-free demonstrations.
-  zh: 自变量机器人发布 [TwinDEX](https://x2robot.com/pages/twindex)：协同设计的可穿戴采集装置与机器人灵巧手，从无本体示教数据中学习灵巧操作。
+  en: Introduced [TwinDEX](https://x2robot.com/en/pages/twindex), a co-designed wearable and robotic hand system for learning dexterous manipulation from robot-free demonstrations.
+  zh: 发布 [TwinDEX](https://x2robot.com/pages/twindex)：协同设计的可穿戴采集装置与机器人灵巧手，从无本体示教数据中学习灵巧操作。
 
 - date: 2026-06-07
   en: Released [X-Tokenizer](https://x-square-robot.github.io/X-Tokenizer_projectPage/), a multimodal action tokenizer for VLA pretraining, and [WALL-WM](https://arxiv.org/abs/2606.01955), a world action model built on semantic action events.

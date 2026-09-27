@@ -10,6 +10,7 @@ related_posts: false
 toc:
   sidebar: left
 hidden: true
+published: false  # draft: not built until ready
 ---
 The plan for this blog is to summarize my learned knowledge, ideas and future expectations about Artificial Intelligence. 
 

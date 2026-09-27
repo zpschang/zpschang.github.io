@@ -5,7 +5,10 @@
 
 // System font stack: no web-font download (Google Fonts is slow or blocked in
 // mainland China), and proper Chinese glyphs on every platform.
+// Latin faces come first (incl. common Linux ones), so English punctuation such as ’ is never
+// drawn full-width by a CJK font; Chinese glyphs fall through to the CJK faces.
 $font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+  "Noto Sans", "Liberation Sans", "DejaVu Sans",
   "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", "Noto Sans SC", sans-serif;
 
 body,

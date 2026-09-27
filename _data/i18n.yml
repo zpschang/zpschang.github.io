@@ -1,14 +1,15 @@
 # UI strings for the English and Chinese homepages, selected by the page's `lang`.
 en:
   home: About
-  projects: Recent Projects
+  projects: Featured Work
   news: News
   selected_pubs: Selected Publications
   all_pubs: Full publication list
   equal: "* Equal contribution"
   email: Email
   contact_title: Contact
-  contact_text: I'm always happy to chat about research and collaboration. Reach me at
+  contact_text: I'm always happy to chat about research, collaboration, or opportunities at X Square Robot. Reach me at
+  contact_end: .
   last_updated: Last updated
   built_with: Built with <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/alshedivat/al-folio">al-folio</a>, hosted on <a href="https://pages.github.com/">GitHub Pages</a>.
   switch_label: 中文
@@ -16,14 +17,15 @@ en:
 
 zh-CN:
   home: 主页
-  projects: 近期项目
+  projects: 代表工作
   news: 最新动态
   selected_pubs: 代表论文
   all_pubs: 全部论文
   equal: "* 同等贡献"
   email: 邮箱
   contact_title: 联系方式
-  contact_text: 欢迎通过邮件交流研究想法与合作机会：
+  contact_text: 欢迎通过邮件交流研究想法、合作，或了解自变量机器人的机会：
+  contact_end: ""
   last_updated: 最后更新
   built_with: 基于 <a href="https://jekyllrb.com/">Jekyll</a> 与 <a href="https://github.com/alshedivat/al-folio">al-folio</a> 构建，托管于 <a href="https://pages.github.com/">GitHub Pages</a>。
   switch_label: EN

@@ -13,6 +13,7 @@ pagination:
     before: 1 # The number of links before the current page
     after: 3  # The number of links after the current page
 nav: false  # hidden from the navbar until there are published posts
+sitemap: false  # keep the empty blog out of search engines for now
 nav_order: 2
 ---
 

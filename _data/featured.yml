@@ -1,4 +1,4 @@
-# "Recent Projects" cards on the homepage, shared by the English and Chinese pages.
+# "Featured Work" cards on the homepage, shared by the English and Chinese pages.
 # wide: true renders a full-width card; role_* adds a small badge; url_zh overrides a link on the Chinese page.
 - key: wall-oss-0-5
   name: Wall-OSS-0.5
@@ -6,8 +6,8 @@
   wide: true
   role_en: Core contributor
   role_zh: 核心贡献者
-  desc_en: An open-source 4B vision-language-action foundation model, pretrained across 20+ robot embodiments, that achieves zero-shot real-robot manipulation straight out of pretraining.
-  desc_zh: 开源 4B 视觉-语言-动作基础模型，在 20 多种机器人本体上预训练，预训练模型无需微调即可在真机上零样本完成操作任务。
+  desc_en: An open-source 4B vision-language-action foundation model, pretrained across 20+ robot embodiments, that already completes real-robot manipulation tasks before any task-specific fine-tuning.
+  desc_zh: 开源 4B 视觉-语言-动作基础模型，在 20 多种机器人本体上预训练，未经任务微调即可在真机上完成操作任务。
   links:
     - { label: Paper, label_zh: 论文, url: "https://arxiv.org/abs/2605.30877" }
     - { label: Code, label_zh: 代码, url: "https://github.com/X-Square-Robot/wall-x" }
@@ -17,8 +17,8 @@
 - key: twindex
   name: TwinDEX
   image: twindex.jpg
-  desc_en: A twinned wearable and robotic dexterous hand for learning dexterous manipulation from robot-free demonstrations.
-  desc_zh: 可穿戴采集装置与机器人灵巧手协同设计，从无本体示教数据中学习灵巧操作。
+  desc_en: A co-designed wearable and robotic hand that turns robot-free demonstrations into dexterous robot manipulation, making data collection scalable.
+  desc_zh: 可穿戴采集装置与机器人灵巧手协同设计，让无本体示教数据直接用于机器人灵巧操作，使数据采集可规模化。
   links:
     - { label: Project, label_zh: 主页, url: "https://x2robot.com/en/pages/twindex", url_zh: "https://x2robot.com/pages/twindex" }
 

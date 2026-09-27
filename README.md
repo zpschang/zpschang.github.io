@@ -9,7 +9,7 @@ Pushing to `master` triggers `.github/workflows/deploy.yml`, which builds the si
 | --- | --- |
 | English homepage text (About Me) and header | `_pages/about.md` |
 | Chinese homepage text (`/cn/`) and header | `_pages/about_cn.md` |
-| Recent Projects cards (both languages) | `_data/featured.yml`, images in `assets/img/projects/` |
+| Featured Work cards (both languages) | `_data/featured.yml`, images in `assets/img/projects/` |
 | News (both languages) | `_data/news.yml` |
 | Publications (homepage "Selected Publications" = entries with `selected={true}`) | `_bibliography/papers.bib` |
 | Venue badge colors | `_data/venues.yml` |
