@@ -225,6 +225,7 @@ video.project-img {
   font-size: 0.9rem;
   line-height: 1.55;
   margin: 0 0 0.6rem;
+  text-wrap: pretty; // avoid a lone character on the last line
 }
 
 .project-links {
