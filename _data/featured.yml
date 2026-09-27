@@ -36,6 +36,19 @@
   links:
     - { label: Project, label_zh: 主页, url: "https://x2robot.com/en/pages/twindex", url_zh: "https://x2robot.com/pages/twindex" }
 
+- key: villa-x
+  name: villa-X
+  image: villa-x.jpg
+  video: villa-x
+  wide: true
+  desc_en: A visual-language-latent-action model that bridges high-level planning and low-level execution through latent actions learned from video, and runs on real robot arms and dexterous hands.
+  desc_zh: 视觉-语言-隐动作模型：以从视频中学到的隐动作连接高层规划与底层执行，并在真实机械臂和灵巧手上完成操作任务。
+  links:
+    - { label: Paper, label_zh: 论文, url: "https://arxiv.org/abs/2507.23682" }
+    - { label: Code, label_zh: 代码, url: "https://github.com/microsoft/villa-x" }
+    - { label: Model, label_zh: 模型, url: "https://huggingface.co/microsoft/villa-x" }
+    - { label: Project, label_zh: 主页, url: "https://microsoft.github.io/villa-x/" }
+
 - key: x-tokenizer
   name: X-Tokenizer
   image: x-tokenizer.jpg
