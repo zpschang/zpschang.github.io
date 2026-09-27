@@ -69,9 +69,11 @@
                 </div>
               </li>
               {%- else %}
-              <li class="nav-item {% if page.title == p.title %}active{% endif %}">
-                <a class="nav-link" href="{{ p.url | relative_url }}">{% if page_is_zh and p.title_zh %}{{ p.title_zh }}{% else %}{{ p.title }}{% endif %}
-                  {%- if page.title == p.title -%}
+              {%- assign nav_active = false -%}
+              {%- if page.title == p.title or page.url == p.permalink_zh -%}{%- assign nav_active = true -%}{%- endif %}
+              <li class="nav-item {% if nav_active %}active{% endif %}">
+                <a class="nav-link" href="{% if page_is_zh and p.permalink_zh %}{{ p.permalink_zh | relative_url }}{% else %}{{ p.url | relative_url }}{% endif %}">{% if page_is_zh and p.title_zh %}{{ p.title_zh }}{% else %}{{ p.title }}{% endif %}
+                  {%- if nav_active -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}
                 </a>
@@ -82,11 +84,17 @@
 
               <!-- Language switch: the page's counterpart (alt_url), else the other homepage -->
               <li class="nav-item lang-switch">
-                {%- if page_is_zh %}
-                <a class="nav-link" href="{{ page.alt_url | default: '/' | relative_url }}" hreflang="en" lang="en" title="{{ t.switch_title }}">{{ t.switch_label }}</a>
-                {%- else %}
-                <a class="nav-link" href="{{ page.alt_url | default: '/cn/' | relative_url }}" hreflang="zh-CN" lang="zh-CN" title="{{ t.switch_title }}">{{ t.switch_label }}</a>
-                {%- endif %}
+                <div class="nav-link lang-seg">
+                  {%- if page_is_zh %}
+                  <a href="{{ page.alt_url | default: '/' | relative_url }}" hreflang="en" lang="en" title="{{ t.switch_title }}">EN</a>
+                  <span class="lang-sep" aria-hidden="true">/</span>
+                  <span class="lang-current" aria-current="true">中</span>
+                  {%- else %}
+                  <span class="lang-current" aria-current="true">EN</span>
+                  <span class="lang-sep" aria-hidden="true">/</span>
+                  <a href="{{ page.alt_url | default: '/cn/' | relative_url }}" hreflang="zh-CN" lang="zh-CN" title="{{ t.switch_title }}">中</a>
+                  {%- endif %}
+                </div>
               </li>
               {%- if site.enable_darkmode %}
 
