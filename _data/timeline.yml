@@ -1,4 +1,4 @@
-# Education and Experience on the homepage (both languages). Newest first; end: present shows "Present" / "至今".
+# Experience and Education on the homepage (both languages). Newest first; end: present shows "Present" / "至今".
 education:
   - start: "2020.09"
     end: "2022.06"
@@ -12,8 +12,8 @@ education:
 experience:
   - start: "2025.09"
     end: present
-    en: Researcher, X Square Robot
-    zh: 自变量机器人，研究员
+    en: Researcher and Project Lead, X Square Robot
+    zh: 自变量机器人，研究员兼项目负责人
   - start: "2022.06"
     end: "2025.09"
     en: Researcher, Machine Learning Group, Microsoft Research Asia
