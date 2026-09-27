@@ -36,7 +36,7 @@
     var sw = document.querySelector(".lang-switch a");
     if (sw) {
       sw.addEventListener("click", function () {
-        var ids = ["publications", "news", "projects", "join"];
+        var ids = ["experience", "education", "publications", "news", "projects", "join"];
         for (var i = 0; i < ids.length; i++) {
           var el = document.getElementById(ids[i]);
           if (el && el.getBoundingClientRect().top < window.innerHeight * 0.4) {

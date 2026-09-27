@@ -1,0 +1,12 @@
+{%- comment -%} Education / Experience list from _data/timeline.yml; include with section="education" or "experience". {%- endcomment -%}
+{%- assign t = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
+{%- assign zh = false -%}
+{%- if page.lang == 'zh-CN' -%}{%- assign zh = true -%}{%- endif -%}
+<ul class="news-list timeline-list">
+  {%- for item in site.data.timeline[include.section] %}
+  <li>
+    <span class="news-date">{{ item.start }} – {% if item.end == 'present' %}{{ t.present }}{% else %}{{ item.end }}{% endif %}</span>
+    <span class="news-text">{% if zh %}{{ item.zh }}{% else %}{{ item.en }}{% endif %}</span>
+  </li>
+  {%- endfor %}
+</ul>

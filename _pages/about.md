@@ -34,4 +34,4 @@ I have also contributed to [X-Tokenizer](#x-tokenizer) and [WALL-WM](#wall-wm).
 
 Previously, I was a researcher at Microsoft Research Asia in [Li Zhao](https://www.microsoft.com/en-us/research/people/lizo/)'s group, where I worked on reinforcement learning and embodied foundation models (latent action models, VLA, visual navigation).
 
-More broadly, I hope my research benefits society as a whole.
+More broadly, I hope my research benefits the vast majority of people, making what physical intelligence can offer accessible to everyone.

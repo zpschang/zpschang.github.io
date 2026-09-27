@@ -4,6 +4,9 @@ en:
   projects: Featured Work
   news: News
   selected_pubs: Selected Papers
+  education: Education
+  experience: Experience
+  present: Present
   all_pubs: Full publication list
   equal: "* Equal contribution"
   email: Email
@@ -31,6 +34,9 @@ zh-CN:
   projects: 代表工作
   news: 最新动态
   selected_pubs: 代表论文
+  education: 教育经历
+  experience: 工作经历
+  present: 至今
   all_pubs: 全部论文
   equal: "* 同等贡献"
   email: 邮箱
