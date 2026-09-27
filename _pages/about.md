@@ -24,7 +24,7 @@ selected_papers: true
 
 I am a researcher and AI engineer building intelligent robotic systems that perceive, understand, and interact with the physical world. Specifically, I work on embodied and physical AI: training foundation models that combine general multimodal understanding with reliable real-world action.
 
-Currently, I work at [X Square Robot](https://x2robot.com/en), where I am a core contributor to:
+Currently, I work at [X Square Robot](https://x2robot.com/en), where I lead a critical part of our foundation model research and have been a core contributor to:
 
 - **[Wall-OSS-0.5](#wall-oss-0-5)** — our open-source 4B vision-language-action foundation model, whose pretrained checkpoint already completes real-robot manipulation tasks before any task-specific fine-tuning;
 - **[WALL-B logistics sorting](#wall-b-logistics)** — fully autonomous sorting of real-world parcels, deployed in live production;

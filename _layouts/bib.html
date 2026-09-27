@@ -81,7 +81,7 @@
             {%- if self_index == short_n -%}, {{ author_html[self_index] }}{%- assign last_shown = self_index -%}
             {%- elsif self_index > short_n -%}, &hellip;, {{ author_html[self_index] }}{%- assign last_shown = self_index -%}{%- endif -%}
             {%- assign last_author = author_array_size | minus: 1 -%}
-            {%- if last_shown < last_author -%}, <span class="i18n-en">et al.</span><span class="i18n-zh">等</span>{%- endif -%}
+            {%- if last_shown < last_author -%}<span class="i18n-en">, et al.</span><span class="i18n-zh"> 等</span>{%- endif -%}
           </span>
           <span class="author-full">{{ authors_full }}</span>
           <button type="button" class="more-authors" aria-expanded="false" onclick="this.setAttribute('aria-expanded', this.parentNode.classList.toggle('expanded'))"><span class="when-collapsed"><span class="i18n-en">all {{ author_array_size }} authors</span><span class="i18n-zh">全部 {{ author_array_size }} 位作者</span></span><span class="when-expanded"><span class="i18n-en">show less</span><span class="i18n-zh">收起</span></span></button>
