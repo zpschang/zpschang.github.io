@@ -1,4 +1,5 @@
 ---
+og_image: https://zpschang.github.io/assets/img/og/og-zh.png
 layout: publication
 permalink: /cn/publications/
 title: 论文

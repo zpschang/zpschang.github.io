@@ -9,9 +9,8 @@
     {%- capture p_alt %}{% if zh and p.name_zh %}{{ p.name_zh }}{% else %}{{ p.name }}{% endif %}{% endcapture %}
     <a class="project-img-link" href="{{ first_url }}">
       {%- if p.video %}
-      <video class="project-img" data-autoplay muted loop playsinline preload="none" poster="{{ p.image | prepend: '/assets/img/projects/' | relative_url }}" aria-label="{{ p_alt }}">
+      <video class="project-img" data-autoplay muted loop playsinline preload="none" data-poster="{{ p.image | prepend: '/assets/img/projects/' | relative_url }}" aria-label="{{ p_alt }}">
         <source src="{{ p.video | prepend: '/assets/video/projects/' | append: '.mp4' | relative_url }}" type="video/mp4">
-        <source src="{{ p.video | prepend: '/assets/video/projects/' | append: '.webm' | relative_url }}" type="video/webm">
       </video>
       {%- else %}
       <img class="project-img" src="{{ p.image | prepend: '/assets/img/projects/' | relative_url }}" alt="{{ p_alt }}" loading="lazy">

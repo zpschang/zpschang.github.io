@@ -12,8 +12,28 @@
       }, { rootMargin: "-60px 0px 0px 0px" }).observe(hero);
     }
 
-    // Project card videos: load and play only while visible; posters only for reduced motion / data saver.
+    // Project card videos: posters load once a card is near the viewport; videos load and play only while visible
+    // (posters only for reduced motion / data saver).
     var vids = document.querySelectorAll("video[data-autoplay]");
+    var showPoster = function (v) {
+      if (v.dataset.poster) {
+        v.poster = v.dataset.poster;
+        delete v.dataset.poster;
+      }
+    };
+    if ("IntersectionObserver" in window) {
+      var near = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            showPoster(e.target);
+            near.unobserve(e.target);
+          }
+        });
+      }, { rootMargin: "600px 0px" });
+      vids.forEach(function (v) { near.observe(v); });
+    } else {
+      vids.forEach(showPoster);
+    }
     var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     var saveData = navigator.connection && navigator.connection.saveData;
     if (vids.length && !reduce && !saveData && "IntersectionObserver" in window) {
@@ -36,10 +56,13 @@
     var sw = document.querySelector(".lang-switch a");
     if (sw) {
       sw.addEventListener("click", function () {
-        var ids = ["experience", "education", "publications", "news", "projects", "join"];
+        var ids = ["education", "experience", "publications", "news", "projects", "join"]; // bottom-most first
+        // At the very bottom the last sections can no longer reach the upper part of the screen; accept any visible one.
+        var atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
+        var limit = window.innerHeight * (atBottom ? 0.85 : 0.4);
         for (var i = 0; i < ids.length; i++) {
           var el = document.getElementById(ids[i]);
-          if (el && el.getBoundingClientRect().top < window.innerHeight * 0.4) {
+          if (el && el.getBoundingClientRect().top < limit) {
             sw.href = sw.href.split("#")[0] + "#" + ids[i];
             return;
           }

@@ -46,6 +46,9 @@ body {
 
 .navbar.navbar-light .navbar-nav .lang-switch .lang-seg a {
   color: var(--global-text-color-light);
+  // Larger tap target (about 44px tall) without moving anything.
+  padding: 0.6rem 0.45rem;
+  margin: -0.6rem -0.45rem;
 
   &:hover {
     color: var(--global-theme-color);
@@ -183,7 +186,7 @@ video.project-img {
   max-width: none;
   aspect-ratio: 2 / 1;
   object-fit: cover;
-  background: #eef0f3;
+  background: rgba(128, 128, 128, 0.12);
 }
 
 .project-body {
@@ -268,6 +271,10 @@ video.project-img {
   .project-card--wide {
     flex-direction: column;
 
+    .project-img-link {
+      flex: 0 0 auto;
+    }
+
     .project-img {
       height: auto;
       min-height: 0;
@@ -347,7 +354,7 @@ video.project-img {
         text-decoration: none; // no dotted <abbr title> underline
         border-bottom: 0;
         cursor: help;
-        min-width: 5.2rem;
+        min-width: 6rem;
         padding: 0.35rem 0.5rem;
         font-size: 0.72rem;
         font-weight: 600;
@@ -619,8 +626,16 @@ html:lang(zh-CN) {
   }
 }
 
-// The academicons Scholar glyph runs smaller than the Font Awesome icons next to it.
-.home .pill .ai {
+// Inline SVG icons (_includes/icon.html), aligned like the icon font they replace.
+.icon {
+  display: inline-block;
+  vertical-align: -0.125em;
+  fill: currentColor;
+  overflow: visible;
+}
+
+// The Scholar glyph runs smaller than the other icons next to it.
+.home .pill .icon-scholar {
   font-size: 1.15em;
 }
 
@@ -721,5 +736,22 @@ html[data-theme='dark'] .join-button:hover {
 @media (max-width: 575.98px) {
   .news-list.timeline-list li {
     grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+// Theme toggle: larger tap target without moving the icon.
+#light-toggle {
+  padding: 0.5rem 0.6rem;
+  margin: -0.5rem -0.6rem;
+
+  .icon {
+    box-sizing: content-box; // the theme's padding sits around the 1em glyph, as with the icon font
+  }
+}
+
+@media print {
+  // Bootstrap prints abbr titles after the text; for venue badges that overlaps the paper title.
+  abbr.badge[title]::after {
+    content: none !important;
   }
 }

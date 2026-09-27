@@ -1,4 +1,5 @@
 ---
+og_image: https://zpschang.github.io/assets/img/og/og-zh.png
 layout: about
 title: 主页
 head_title: 张蒲石 (Pushi Zhang)

@@ -1,4 +1,5 @@
 ---
+og_image: https://zpschang.github.io/assets/img/og/og-join-en.png
 layout: page
 title: Join Us
 description: Research on foundation models, data, and agent infrastructure for physical AGI.
@@ -80,4 +81,4 @@ We have a large body of data collected in the real physical world, and we suppor
 
 Both internships and full-time roles are possible. If you are interested, or would like to exchange ideas, feel free to reach out at [{{ site.email }}](mailto:{{ site.email | encode_email }}).
 
-<p class="join-actions"><a class="join-button" href="mailto:{{ site.email | encode_email }}?subject=Collaboration"><i class="fas fa-envelope"></i> Get in touch</a></p>
+<p class="join-actions"><a class="join-button" href="mailto:{{ site.email | encode_email }}?subject=Collaboration">{% include icon.html name="envelope" %} Get in touch</a></p>
