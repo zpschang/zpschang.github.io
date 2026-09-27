@@ -3,6 +3,10 @@
   en: Introduced [TwinDEX](https://x2robot.com/en/pages/twindex), a co-designed wearable and robotic hand system for learning dexterous manipulation from robot-free demonstrations.
   zh: 发布 [TwinDEX](https://x2robot.com/pages/twindex)：协同设计的可穿戴采集装置与机器人灵巧手，从无本体示教数据中学习灵巧操作。
 
+- date: 2026-08-12
+  en: "Sorted real-world parcels fully autonomously with our WALL-B model in a [global livestream](https://x2robot.com/en/news/6a7d67be4dd82e1d55074f8a): 1,816 parcels per hour at over 98% accuracy."
+  zh: "WALL-B 模型在[全球直播](https://x2robot.com/en/news/6a7d67be4dd82e1d55074f8a)中全自主分拣真实物流包裹：1816 件/小时，准确率超过 98%。"
+
 - date: 2026-06-07
   en: Released [X-Tokenizer](https://x-square-robot.github.io/X-Tokenizer_projectPage/), a multimodal action tokenizer for VLA pretraining, and [WALL-WM](https://arxiv.org/abs/2606.01955), a world action model built on semantic action events.
   zh: 发布 [X-Tokenizer](https://x-square-robot.github.io/X-Tokenizer_projectPage/)（面向 VLA 预训练的多模态动作分词器）与 [WALL-WM](https://arxiv.org/abs/2606.01955)（以语义动作事件为学习单元的世界动作模型）。

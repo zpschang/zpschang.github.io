@@ -1,12 +1,18 @@
 $(document).ready(function() {
   // add toggle functionality to abstract and bibtex buttons
-  $('a.abstract').click(function() {
-    $(this).parent().parent().find(".abstract.hidden").toggleClass('open');
-    $(this).parent().parent().find(".bibtex.hidden.open").toggleClass('open');
+  $('.links .abstract').click(function() {
+    var entry = $(this).parent().parent();
+    entry.find(".bibtex.hidden.open").toggleClass('open');
+    entry.find(".links .bibtex").attr('aria-expanded', 'false');
+    var open = entry.find(".abstract.hidden").toggleClass('open').hasClass('open');
+    $(this).attr('aria-expanded', open ? 'true' : 'false');
   });
-  $('a.bibtex').click(function() {
-    $(this).parent().parent().find(".bibtex.hidden").toggleClass('open');
-    $(this).parent().parent().find(".abstract.hidden.open").toggleClass('open');
+  $('.links .bibtex').click(function() {
+    var entry = $(this).parent().parent();
+    entry.find(".abstract.hidden.open").toggleClass('open');
+    entry.find(".links .abstract").attr('aria-expanded', 'false');
+    var open = entry.find(".bibtex.hidden").toggleClass('open').hasClass('open');
+    $(this).attr('aria-expanded', open ? 'true' : 'false');
   });
   $('a').removeClass('waves-effect waves-light');
 

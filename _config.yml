@@ -7,7 +7,7 @@ first_name: Pushi
 # middle_name: R.
 last_name: Zhang
 email: zpschang@gmail.com
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
+description: >- # folded, no trailing newline
   Pushi Zhang (张蒲石) is a researcher at X Square Robot working on embodied and physical AI:
   foundation models that combine general multimodal understanding with reliable real-world action.
 footer_text: >
@@ -16,7 +16,7 @@ footer_text: >
 keywords: Pushi Zhang, 张蒲石, embodied AI, physical AI, vision-language-action, VLA, robot foundation models, robotics, X Square Robot, Wall-OSS
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-# icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: favicon.png # browser tab icon in assets/img/
 
 url: https://zpschang.github.io # the base hostname & protocol for your site
 # baseurl: /al-folio # the subpath of your site, e.g. /blog/
@@ -245,6 +245,10 @@ defaults:
       path: "assets"
     values:
       sitemap: false
+  - scope:
+      path: "google15eb3f9db77e3af5.html"
+    values:
+      sitemap: false
 
 sass:
   style: compressed
@@ -273,7 +277,7 @@ jekyll-archives:
     tag: '/blog/tag/:name/'
     category: '/blog/category/:name/'
 
-display_tags: ['research', 'non-research'] # ['formatting', 'images', 'links', 'math', 'code'] # these tags will be displayed on the front page of your blog
+display_tags: [] # ['formatting', 'images', 'links', 'math', 'code'] # these tags will be displayed on the front page of your blog
 display_categories: [] # ['blockquotes'] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
@@ -309,8 +313,8 @@ scholar:
 
 # Display different badges withs stats for your publications
 enable_publication_badges:
-  altmetric: true # Altmetric badge (https://www.altmetric.com/products/altmetric-badges/)
-  dimensions: true # Dimensions badge (https://badge.dimensions.ai/)
+  altmetric: false # Altmetric badge (https://www.altmetric.com/products/altmetric-badges/)
+  dimensions: false # Dimensions badge (https://badge.dimensions.ai/)
 
 # Filter out certain bibtex entry keywords used internally from the bib output
 filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website, preview, altmetric, model, demo, equal]
@@ -330,7 +334,7 @@ enable_publication_thumbnails: true  # shows the venue badge column
 # These are the defaults
 external_links:
   enabled: true
-  rel: external nofollow noopener
+  rel: external noopener
   target: _blank
   exclude:
 
@@ -381,7 +385,7 @@ enable_navbar_social:       false  # enables displaying social links in the
                                    # navbar on the about page
 enable_project_categories:  true   # enables categorization of projects into
                                    # multiple categories
-enable_medium_zoom:         true   # enables image zoom feature (as on medium.com)
+enable_medium_zoom:         false   # enables image zoom feature (as on medium.com)
 enable_progressbar:         true   # enables a horizontal progress bar linked to the vertical scroll position
 
 # -----------------------------------------------------------------------------
@@ -411,19 +415,3 @@ medium_zoom:
 # Get external JSON data
 # -----------------------------------------------------------------------------
 
-jekyll_get_json:
-  - data: resume
-    json: assets/json/resume.json # it can also be an url
-jsonresume:
-  - basics
-  - work
-  - education
-  - publications
-  - projects
-  - volunteer
-  - awards
-  - certificates
-  - skills
-  - languages
-  - interests
-  - references

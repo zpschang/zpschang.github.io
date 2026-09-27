@@ -1,5 +1,5 @@
 # "Featured Work" cards on the homepage, shared by the English and Chinese pages.
-# wide: true renders a full-width card; role_* adds a small badge; url_zh overrides a link on the Chinese page.
+# wide: true renders a full-width card; role_* adds a small badge; name_zh / url_zh override the name / a link on the Chinese page.
 - key: wall-oss-0-5
   name: Wall-OSS-0.5
   image: wall-oss-0.5.jpg
@@ -14,9 +14,23 @@
     - { label: Model, label_zh: 模型, url: "https://huggingface.co/x-square-robot/wall-oss-0.5" }
     - { label: Project, label_zh: 主页, url: "https://x2robot.com/en/oss", url_zh: "https://x2robot.com/oss" }
 
+- key: wall-b-logistics
+  name: WALL-B Logistics Sorting
+  name_zh: WALL-B 物流分拣
+  image: wall-b-logistics.jpg
+  wide: true
+  role_en: Core contributor
+  role_zh: 核心贡献者
+  desc_en: "Our WALL-B embodied foundation model drives two robot arms to sort highly variable real-world parcels fully autonomously: 1,816 parcels per hour at over 98% accuracy in a public livestream, and now deployed on a live production line with a leading logistics company."
+  desc_zh: "WALL-B 具身基础模型驱动双臂，全自主分拣大小、形状、材质各异的真实物流包裹：全球直播中分拣效率达 1816 件/小时、准确率超过 98%，并已与头部物流企业合作部署到真实产线。"
+  links:
+    - { label: News, label_zh: 新闻, url: "https://x2robot.com/en/news/6a7d67be4dd82e1d55074f8a", url_zh: "https://app.xinhuanet.com/news/article.html?articleId=202608190d3ab99534664047b0e72a302c1e4731" }
+
 - key: twindex
   name: TwinDEX
   image: twindex.jpg
+  role_en: Core contributor
+  role_zh: 核心贡献者
   desc_en: A co-designed wearable and robotic hand that turns robot-free demonstrations into dexterous robot manipulation, making data collection scalable.
   desc_zh: 可穿戴采集装置与机器人灵巧手协同设计，让无本体示教数据直接用于机器人灵巧操作，使数据采集可规模化。
   links:
@@ -30,6 +44,7 @@
   links:
     - { label: Paper, label_zh: 论文, url: "https://arxiv.org/abs/2606.14752" }
     - { label: Code, label_zh: 代码, url: "https://github.com/X-Square-Robot/X-Tokenizer" }
+    - { label: Model, label_zh: 模型, url: "https://huggingface.co/x-square-robot/X-Tokenizer" }
     - { label: Project, label_zh: 主页, url: "https://x-square-robot.github.io/X-Tokenizer_projectPage/" }
 
 - key: wall-wm
@@ -40,3 +55,4 @@
   links:
     - { label: Paper, label_zh: 论文, url: "https://arxiv.org/abs/2606.01955" }
     - { label: Code, label_zh: 代码, url: "https://github.com/X-Square-Robot/wall-wm" }
+    - { label: Project, label_zh: 主页, url: "https://x2robot.com/en/pages/wm", url_zh: "https://x2robot.com/pages/wm" }

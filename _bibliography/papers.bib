@@ -3,7 +3,7 @@
 
 % Single source for the homepage "Selected Publications" (selected={true}) and the Publications page.
 % Custom fields (hidden from the exported BibTeX): abbr = venue badge, arxiv/pdf/code/website/model/demo = buttons,
-% equal = number of leading authors with equal contribution (marked with *).
+% equal = comma-separated 1-based positions of equal-contribution authors (marked with *), e.g. equal={1,2}.
 
 @article{yu2026walloss,
   title={Wall-OSS-0.5 Technical Report},
@@ -30,6 +30,10 @@
   website={https://x-square-robot.github.io/X-Tokenizer_projectPage/},
   bibtex_show={true},
   selected={true}
+,
+  equal={1,2}
+,
+  model={https://huggingface.co/x-square-robot/X-Tokenizer}
 }
 
 @article{li2026wallwm,
@@ -42,6 +46,9 @@
   code={https://github.com/X-Square-Robot/wall-wm},
   bibtex_show={true},
   selected={true}
+,
+  website={https://x2robot.com/en/pages/wm},
+  note={Early version at ECCV 2026 Workshop (STEAI), Oral}
 }
 
 @article{zhang2026wallss,
@@ -51,7 +58,7 @@
   year={2026},
   abbr={arXiv},
   arxiv={2608.26239},
-  code={https://github.com/X-Square-Robot/wall-ss},
+  website={https://x2robot.com/en/pages/ss},
   bibtex_show={true}
 }
 
@@ -66,17 +73,25 @@
   website={https://microsoft.github.io/villa-x/},
   bibtex_show={true},
   selected={true}
+,
+  equal={1,2,3,4,5,10}
+,
+  model={https://huggingface.co/microsoft/villa-x}
 }
 
 @inproceedings{zhang2025lam,
   title={What Do Latent Action Models Actually Learn?},
   author={Zhang, Chuheng and Pearce, Tim and Zhang, Pushi and Wang, Kaixin and Chen, Xiaoyu and Shen, Wei and Zhao, Li and Bian, Jiang},
   booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  volume={38},
+  pages={146676--146697},
   year={2025},
   abbr={NeurIPS},
   arxiv={2506.15691},
   bibtex_show={true},
   selected={true}
+,
+  equal={1,2}
 }
 
 @article{wan2025pignav,
@@ -90,6 +105,8 @@
   demo={https://youtu.be/y6Eu7EVLhKA},
   bibtex_show={true},
   selected={true}
+,
+  model={https://huggingface.co/zpschang/PIG-Nav}
 }
 
 @article{cheng2025ucmoa,
@@ -100,6 +117,8 @@
   abbr={arXiv},
   arxiv={2503.10669},
   bibtex_show={true}
+,
+  equal={1,2}
 }
 
 @article{chen2024igor,
@@ -112,6 +131,8 @@
   website={https://www.microsoft.com/en-us/research/project/igor-image-goal-representations/},
   bibtex_show={true},
   selected={true}
+,
+  equal={1,2,3,4,7}
 }
 
 @inproceedings{cai2023distributional,
@@ -122,7 +143,7 @@
   pages={15593--15613},
   year={2023},
   abbr={NeurIPS},
-  equal={2},
+  equal={1,2},
   pdf={https://papers.nips.cc/paper_files/paper/2023/file/32285dd184dbfc33cb2d1f0db53c23c5-Paper-Conference.pdf},
   code={https://github.com/zpschang/DPMORL},
   bibtex_show={true}
@@ -134,7 +155,7 @@
   booktitle={NeurIPS 2023 Workshop on Robot Learning},
   year={2023},
   abbr={NeurIPS-W},
-  equal={3},
+  equal={1,2,3},
   pdf={https://www.robot-learning.ml/2023/files/paper32.pdf},
   demo={https://www.youtube.com/watch?v=pOtnB_Rfciw},
   bibtex_show={true}
@@ -171,6 +192,10 @@
   abbr={NeurIPS},
   arxiv={2212.12735},
   bibtex_show={true}
+,
+  equal={1,2}
+,
+  code={https://github.com/DDDOH/SeCBAD}
 }
 
 @inproceedings{zhang2021distributional,
@@ -184,6 +209,10 @@
   pdf={https://proceedings.neurips.cc/paper/2021/file/0b9e57c46de934cee33b0e8d1839bfc2-Paper.pdf},
   code={https://github.com/zpschang/MD3QN},
   bibtex_show={true}
+,
+  equal={1,2}
+,
+  arxiv={2110.13578}
 }
 
 @inproceedings{zhang2021independence,
@@ -206,6 +235,7 @@
   year={2021},
   publisher={Elsevier},
   abbr={Neurocomp.},
-  pdf={https://www.sciencedirect.com/science/article/abs/pii/S0925231220320282},
+  doi={10.1016/j.neucom.2020.12.116},
+  html={https://doi.org/10.1016/j.neucom.2020.12.116},
   bibtex_show={true}
 }

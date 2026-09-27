@@ -23,7 +23,13 @@ selected_papers: true
 
 I am a researcher and AI engineer building intelligent robotic systems that perceive, understand, and interact with the physical world. Specifically, I work on embodied and physical AI: training foundation models that combine general multimodal understanding with reliable real-world action.
 
-Currently, I work at [X Square Robot](https://x2robot.com/en), where I am a core contributor to **[Wall-OSS-0.5](#wall-oss-0-5)**, our open-source 4B vision-language-action foundation model, whose pretrained checkpoint already completes real-robot manipulation tasks before any task-specific fine-tuning. I also contributed to [TwinDEX](#twindex), [X-Tokenizer](#x-tokenizer), and [WALL-WM](#wall-wm).
+Currently, I work at [X Square Robot](https://x2robot.com/en), where I am a core contributor to:
+
+- **[Wall-OSS-0.5](#wall-oss-0-5)** — our open-source 4B vision-language-action foundation model, whose pretrained checkpoint already completes real-robot manipulation tasks before any task-specific fine-tuning;
+- **[WALL-B logistics sorting](#wall-b-logistics)** — fully autonomous sorting of real-world parcels, deployed in live production;
+- **[TwinDEX](#twindex)** — a co-designed wearable and robotic hand system.
+
+I have also contributed to [X-Tokenizer](#x-tokenizer) and [WALL-WM](#wall-wm).
 
 Previously, I was a researcher at Microsoft Research Asia in [Li Zhao](https://www.microsoft.com/en-us/research/people/lizo/)'s group, where I worked on reinforcement learning and embodied foundation models (latent action models, VLA, visual navigation) and led the Vision-based Game-Testing AI project in collaboration with the Microsoft Xbox team.
 

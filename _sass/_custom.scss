@@ -301,8 +301,8 @@ body {
       }
 
       > .row > .abbr {
-        flex: 0 0 6.5rem;
-        max-width: 6.5rem;
+        flex: 0 0 7rem;
+        max-width: 7rem;
       }
 
       > .row > .col-sm-10 {
@@ -317,6 +317,9 @@ body {
 
       abbr.badge {
         box-shadow: none;
+        text-decoration: none; // no dotted <abbr title> underline
+        border-bottom: 0;
+        cursor: help;
         min-width: 5.2rem;
         padding: 0.35rem 0.5rem;
         font-size: 0.72rem;
@@ -432,6 +435,10 @@ footer.site-footer {
     height: 112px;
   }
 
+  .home .hero {
+    padding-top: 0;
+  }
+
   .home .hero-name {
     font-size: 2rem;
   }
@@ -459,12 +466,13 @@ footer.site-footer {
 // Navbar name on the homepage: hidden while the header is visible, fades in after it.
 .navbar .brand-autohide {
   opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.25s ease;
+  visibility: hidden; // also out of the tab order while hidden
+  transition: opacity 0.25s ease, visibility 0s linear 0.25s;
 
   &.brand-visible {
     opacity: 1;
-    pointer-events: auto;
+    visibility: visible;
+    transition: opacity 0.25s ease, visibility 0s;
   }
 }
 
@@ -513,6 +521,7 @@ button:focus-visible,
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .navbar .brand-autohide,
   .project-card,
   .project-card:hover,
   .project-img,
@@ -535,4 +544,82 @@ button:focus-visible,
 .post-header .post-description {
   color: var(--global-text-color-light);
   margin-bottom: 0;
+}
+
+// ---------------------------------------------------------------- Review fixes
+
+// Chinese page: publication-list UI strings (author toggle, "et al.") come in both languages.
+.i18n-zh {
+  display: none;
+}
+
+html:lang(zh-CN) {
+  .i18n-zh {
+    display: inline;
+  }
+
+  .i18n-en {
+    display: none;
+  }
+}
+
+// Collapsed abstract/BibTeX blocks stay out of the tab order; long BibTeX lines wrap.
+.publications ol.bibliography li .hidden:not(.open) {
+  visibility: hidden;
+}
+
+.publications .bibtex pre,
+.publications .bibtex code {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.publications .links button.btn {
+  margin: 0.35rem 0.3rem 0 0;
+  padding: 0.1rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: none;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--global-text-color);
+  cursor: pointer;
+
+  &:hover {
+    color: var(--global-theme-color);
+    border-color: var(--global-theme-color);
+  }
+}
+
+// The academicons Scholar glyph runs smaller than the Font Awesome icons next to it.
+.home .pill .ai {
+  font-size: 1.15em;
+}
+
+// Footer sits at the bottom of short pages (e.g. 404).
+body.sticky-bottom-footer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  > .container.mt-5 {
+    flex: 1 0 auto;
+  }
+}
+
+.notfound-links a {
+  display: inline-block;
+  margin-right: 1.25rem;
+  font-weight: 500;
+}
+
+// About Me: list of core contributions (not the news list)
+.home article ul:not(.news-list) {
+  padding-left: 1.25rem;
+  margin-bottom: 0.9rem;
+
+  li {
+    margin-bottom: 0.35rem;
+  }
 }

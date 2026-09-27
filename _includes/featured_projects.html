@@ -6,10 +6,10 @@
   {%- assign first_url = p.links[0].url -%}
   {%- if zh and p.links[0].url_zh -%}{%- assign first_url = p.links[0].url_zh -%}{%- endif %}
   <div class="project-card{% if p.wide %} project-card--wide{% endif %}" id="{{ p.key }}">
-    <a class="project-img-link" href="{{ first_url }}"><img class="project-img" src="{{ p.image | prepend: '/assets/img/projects/' | relative_url }}" alt="{{ p.name }}" loading="lazy"></a>
+    <a class="project-img-link" href="{{ first_url }}"><img class="project-img" src="{{ p.image | prepend: '/assets/img/projects/' | relative_url }}" alt="{% if zh and p.name_zh %}{{ p.name_zh }}{% else %}{{ p.name }}{% endif %}" loading="lazy"></a>
     <div class="project-body">
       <div class="project-head">
-        <h3 class="project-name">{{ p.name }}</h3>
+        <h3 class="project-name">{% if zh and p.name_zh %}{{ p.name_zh }}{% else %}{{ p.name }}{% endif %}</h3>
         {%- if p.role_en %}
         <span class="project-role">{% if zh %}{{ p.role_zh }}{% else %}{{ p.role_en }}{% endif %}</span>
         {%- endif %}

@@ -23,7 +23,7 @@
     {%- else -%}
         {%- capture title -%}{{ site.title }}{%- endcapture -%}
     {%- endif -%}
-    {% if page.head_title %}
+    {%- if page.head_title -%}
         {{ page.head_title }}
     {%- elsif page.url == '/blog/index.html' %}
         {{ site.blog_nav_title }} | {{ title }}
@@ -54,17 +54,23 @@
     <!-- OpenGraph -->
     <meta property="og:site_name" content="{{ title }}" />
     <meta property="og:type" content="{%- if is_blog_post -%}article{%- else -%}website{%- endif -%}" />
-    <meta property="og:title" content="{%- if page.title -%}{{ title }} | {{ page.title }}{%- else -%}{{ title }}{%- endif -%}" />
+    {%- capture share_title -%}
+        {%- if page.head_title -%}{{ page.head_title }}{%- elsif page.url == '/' or page.title == nil or page.title == "" -%}{{ title }}{%- else -%}{{ page.title }} | {{ title }}{%- endif -%}
+    {%- endcapture %}
+    <meta property="og:title" content="{{ share_title }}" />
     <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url | remove_first: 'index.html' }}" />
     <meta property="og:description" content="{%- if page.description -%}{{ page.description }}{%- else -%}{{ site.description }}{%- endif -%}" />
     {% if page.og_image or site.og_image -%}
     <meta property="og:image" content="{%- if page.og_image -%}{{ page.og_image }}{%- else -%}{{ site.og_image }}{%- endif -%}" />
     {%- endif %}
-    <meta property="og:locale" content="{{ site.lang }}" />
+    <meta property="og:locale" content="{%- if page.lang == 'zh-CN' -%}zh_CN{%- else -%}en_US{%- endif -%}" />
+    {%- if page.permalink == '/' or page.permalink == '/cn/' %}
+    <meta property="og:locale:alternate" content="{%- if page.lang == 'zh-CN' -%}en_US{%- else -%}zh_CN{%- endif -%}" />
+    {%- endif %}
 
     <!-- Twitter card -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="{%- if page.title -%}{{ page.title }}{%- else -%}{{ title }}{%- endif -%}" />
+    <meta name="twitter:title" content="{{ share_title }}" />
     <meta name="twitter:description" content="{%- if page.description -%}{{ page.description }}{%- else -%}{{ site.description }}{%- endif -%}" />
     {% if page.og_image or site.og_image -%}
     <meta name="twitter:image" content="{%- if page.og_image -%}{{ page.og_image }}{%- else -%}{{ site.og_image }}{%- endif -%}" />
