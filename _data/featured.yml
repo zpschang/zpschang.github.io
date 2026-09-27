@@ -41,8 +41,8 @@
   image: villa-x.jpg
   video: villa-x
   wide: true
-  desc_en: A visual-language-latent-action model that bridges high-level planning and low-level execution through latent actions learned from video, and runs on real robot arms and dexterous hands.
-  desc_zh: 视觉-语言-隐动作模型：以从视频中学到的隐动作连接高层规划与底层执行，并在真实机械臂和灵巧手上完成操作任务。
+  desc_en: "A visual-language-latent-action model that plans in imagination: from an image and an instruction, it predicts latent actions and the motion they lead to, bridging high-level planning and low-level robot execution."
+  desc_zh: 视觉-语言-隐动作模型，能在想象中规划：根据图像和指令预测隐动作及其带来的运动，连接高层规划与机器人底层执行。
   links:
     - { label: Paper, label_zh: 论文, url: "https://arxiv.org/abs/2507.23682" }
     - { label: Code, label_zh: 代码, url: "https://github.com/microsoft/villa-x" }
