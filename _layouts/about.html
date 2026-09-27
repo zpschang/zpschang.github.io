@@ -32,7 +32,10 @@ layout: default
           <h2 id="join">{{ t.join_title }}</h2>
           <div class="join-card">
             {{ t.join_body | markdownify }}
-            <a class="join-button" href="mailto:{{ site.email | encode_email }}?subject={{ t.join_subject | uri_escape }}"><i class="fas fa-envelope"></i> {{ t.join_button }}</a>
+            <div class="join-actions">
+              <a class="join-button" href="mailto:{{ site.email | encode_email }}?subject={{ t.join_subject | uri_escape }}"><i class="fas fa-envelope"></i> {{ t.join_button }}</a>
+              <a class="join-more" href="{{ t.join_url | relative_url }}">{{ t.join_more }} &rarr;</a>
+            </div>
           </div>
 
           {% if page.featured_projects -%}

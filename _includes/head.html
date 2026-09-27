@@ -20,14 +20,19 @@
     {% if site.icon.size <= 4 %}
     <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>{{ site.icon }}</text></svg>">
     {% elsif site.icon != blank %}
-    <link rel="shortcut icon" href="{{ site.icon | prepend: '/assets/img/' | relative_url | bust_file_cache}}"/>
+    <link rel="icon" type="image/svg+xml" href="{{ '/assets/img/favicon.svg' | relative_url | bust_file_cache }}">
+    <link rel="icon" type="image/png" sizes="180x180" href="{{ site.icon | prepend: '/assets/img/' | relative_url | bust_file_cache }}">
+    <link rel="apple-touch-icon" href="{{ site.icon | prepend: '/assets/img/' | relative_url | bust_file_cache }}">
     {% endif %}
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url | bust_css_cache }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+    {%- if page.alt_url %}
+    {%- if page.lang == 'zh-CN' -%}{%- assign url_en = page.alt_url -%}{%- assign url_zh = page.permalink -%}{%- else -%}{%- assign url_en = page.permalink -%}{%- assign url_zh = page.alt_url -%}{%- endif %}
+    <link rel="alternate" hreflang="en" href="{{ url_en | absolute_url }}">
+    <link rel="alternate" hreflang="zh-CN" href="{{ url_zh | absolute_url }}">
+    <link rel="alternate" hreflang="x-default" href="{{ url_en | absolute_url }}">
+    {%- endif %}
     {%- if page.permalink == '/' or page.permalink == '/cn/' %}
-    <link rel="alternate" hreflang="en" href="{{ '/' | absolute_url }}">
-    <link rel="alternate" hreflang="zh-CN" href="{{ '/cn/' | absolute_url }}">
-    <link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",

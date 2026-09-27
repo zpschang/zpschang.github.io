@@ -3,6 +3,7 @@ layout: about
 title: About
 permalink: /
 lang: en
+alt_url: /cn/
 
 # Header block (name, role, links, photo at assets/img/prof_pic.jpg)
 hero:
@@ -33,4 +34,4 @@ I have also contributed to [X-Tokenizer](#x-tokenizer) and [WALL-WM](#wall-wm).
 
 Previously, I was a researcher at Microsoft Research Asia in [Li Zhao](https://www.microsoft.com/en-us/research/people/lizo/)'s group, where I worked on reinforcement learning and embodied foundation models (latent action models, VLA, visual navigation).
 
-More broadly, I hope to help build physical intelligence that raises society's productivity and the efficiency with which we use material resources, so that its benefits reach society as a whole.
+More broadly, I hope my research benefits society as a whole.

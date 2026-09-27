@@ -64,7 +64,7 @@
     <meta property="og:image" content="{%- if page.og_image -%}{{ page.og_image }}{%- else -%}{{ site.og_image }}{%- endif -%}" />
     {%- endif %}
     <meta property="og:locale" content="{%- if page.lang == 'zh-CN' -%}zh_CN{%- else -%}en_US{%- endif -%}" />
-    {%- if page.permalink == '/' or page.permalink == '/cn/' %}
+    {%- if page.alt_url %}
     <meta property="og:locale:alternate" content="{%- if page.lang == 'zh-CN' -%}en_US{%- else -%}zh_CN{%- endif -%}" />
     {%- endif %}
 
