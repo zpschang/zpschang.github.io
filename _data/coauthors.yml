@@ -1,0 +1,4 @@
+# Coauthors whose names link to a homepage in the publication lists (matched by last name + first name).
+"Zhao":
+  - firstname: ["Li"]
+    url: https://www.microsoft.com/en-us/research/people/lizo/

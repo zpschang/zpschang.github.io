@@ -1,0 +1,10 @@
+{%- assign t = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
+    <footer class="site-footer sticky-bottom mt-5">
+      <div class="container">
+        &copy; {{ site.time | date: '%Y' }} {% if page.lang == 'zh-CN' %}张蒲石{% else %}{{ site.first_name }} {{ site.last_name }}{% endif %}.
+        {{ t.built_with }}
+        {%- if site.last_updated %}
+        {{ t.last_updated }}: {% if page.lang == 'zh-CN' %}{{ site.time | date: '%Y-%m-%d' }}{% else %}{{ site.time | date: '%B %-d, %Y' }}{% endif %}.
+        {%- endif %}
+      </div>
+    </footer>
