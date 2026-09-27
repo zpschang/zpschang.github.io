@@ -5,7 +5,7 @@
 
 - date: 2026-08-12
   en: "Sorted real-world parcels fully autonomously with our WALL-B model in a [global livestream](https://x2robot.com/en/news/6a7d67be4dd82e1d55074f8a): 1,816 parcels per hour at over 98% accuracy."
-  zh: "WALL-B 模型在[全球直播](https://x2robot.com/en/news/6a7d67be4dd82e1d55074f8a)中全自主分拣真实物流包裹：1816 件/小时，准确率超过 98%。"
+  zh: "WALL-B 模型在[全球直播](https://www.news.cn/finance/20260813/2230507fa54140d0aee9074f9b2c0246/c.html)中全自主分拣真实物流包裹：1816 件/小时，准确率超过 98%。"
 
 - date: 2026-06-07
   en: Released [X-Tokenizer](https://x-square-robot.github.io/X-Tokenizer_projectPage/), a multimodal action tokenizer for VLA pretraining, and [WALL-WM](https://arxiv.org/abs/2606.01955), a world action model built on semantic action events.
