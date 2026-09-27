@@ -1,6 +1,6 @@
 # "Featured Work" cards on the homepage, shared by the English and Chinese pages.
 # wide: true renders a full-width card; role_* adds a small badge; name_zh / url_zh override the name / a link on the Chinese page;
-# en_only: true shows a link on the English page only; video: <name> plays assets/video/projects/<name>.{webm,mp4} over the image.
+# en_only: true shows a link on the English page only; video: <name> plays assets/video/projects/<name>.mp4 (image = its poster).
 - key: wall-oss-0-5
   name: Wall-OSS-0.5
   image: wall-oss-0.5.jpg
@@ -39,6 +39,7 @@
 - key: x-tokenizer
   name: X-Tokenizer
   image: x-tokenizer.jpg
+  video: x-tokenizer
   desc_en: A multimodal action tokenizer that serves as a semantic interface between vision-language reasoning and continuous robot control.
   desc_zh: 多模态动作分词器，在视觉语言推理与连续机器人控制之间建立语义接口。
   links:

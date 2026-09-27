@@ -6,20 +6,20 @@ layout: default
       <div class="post home">
         <header class="hero">
           <div class="hero-text">
-            <h1 class="hero-name">{{ page.hero.name }} <span class="hero-name-alt">{{ page.hero.name_alt }}</span></h1>
+            <h1 class="hero-name">{{ page.hero.name }} <span class="hero-name-alt" lang="{% if page.lang == 'zh-CN' %}en{% else %}zh-CN{% endif %}">{{ page.hero.name_alt }}</span></h1>
             <p class="hero-role">{{ page.hero.role }} · <a href="{{ page.hero.org_url }}">{{ page.hero.org }}</a></p>
             {%- if page.hero.tagline %}
             <p class="hero-tagline">{{ page.hero.tagline }}</p>
             {%- endif %}
             <div class="hero-links">
               {%- if site.scholar_userid %}
-              <a class="pill" href="https://scholar.google.com/citations?user={{ site.scholar_userid }}"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+              <a class="pill" href="https://scholar.google.com/citations?user={{ site.scholar_userid }}">{% include icon.html name="scholar" %} Google Scholar</a>
               {%- endif %}
               {%- if site.github_username %}
-              <a class="pill" href="https://github.com/{{ site.github_username }}"><i class="fab fa-github"></i> GitHub</a>
+              <a class="pill" href="https://github.com/{{ site.github_username }}">{% include icon.html name="github" %} GitHub</a>
               {%- endif %}
               {%- if site.email %}
-              <a class="pill" href="mailto:{{ site.email | encode_email }}"><i class="fas fa-envelope"></i> {{ t.email }}</a>
+              <a class="pill" href="mailto:{{ site.email | encode_email }}">{% include icon.html name="envelope" %} {{ t.email }}</a>
               {%- endif %}
             </div>
           </div>
@@ -33,7 +33,7 @@ layout: default
           <div class="join-card">
             {{ t.join_body | markdownify }}
             <div class="join-actions">
-              <a class="join-button" href="mailto:{{ site.email | encode_email }}?subject={{ t.join_subject | uri_escape }}"><i class="fas fa-envelope"></i> {{ t.join_button }}</a>
+              <a class="join-button" href="mailto:{{ site.email | encode_email }}?subject={{ t.join_subject | uri_escape }}">{% include icon.html name="envelope" %} {{ t.join_button }}</a>
               <a class="join-more" href="{{ t.join_url | relative_url }}">{{ t.join_more }} &rarr;</a>
             </div>
           </div>

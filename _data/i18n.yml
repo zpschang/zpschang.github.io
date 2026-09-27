@@ -28,6 +28,10 @@ en:
   built_with: Built with <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/alshedivat/al-folio">al-folio</a>, hosted on <a href="https://pages.github.com/">GitHub Pages</a>.
   switch_label: 中文
   switch_title: 中文版
+  nav_toggle: Toggle navigation
+  nav_current: (current)
+  theme_title: Change theme
+  theme_toggle: Toggle dark mode
 
 zh-CN:
   home: 主页
@@ -58,3 +62,7 @@ zh-CN:
   built_with: 基于 <a href="https://jekyllrb.com/">Jekyll</a> 与 <a href="https://github.com/alshedivat/al-folio">al-folio</a> 构建，托管于 <a href="https://pages.github.com/">GitHub Pages</a>。
   switch_label: EN
   switch_title: English
+  nav_toggle: 展开或收起导航菜单
+  nav_current: （当前页面）
+  theme_title: 切换主题
+  theme_toggle: 切换深色模式

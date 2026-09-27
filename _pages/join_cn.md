@@ -1,4 +1,5 @@
 ---
+og_image: https://zpschang.github.io/assets/img/og/og-join-zh.png
 layout: page
 title: 加入我们
 head_title: 加入我们 | 张蒲石 (Pushi Zhang)
@@ -75,4 +76,4 @@ alt_url: /join/
 
 实习、全职均可。如果你有意愿，或者希望交流，欢迎联系我：[{{ site.email }}](mailto:{{ site.email | encode_email }})。
 
-<p class="join-actions"><a class="join-button" href="mailto:{{ site.email | encode_email }}?subject=%E5%90%88%E4%BD%9C%E4%BA%A4%E6%B5%81"><i class="fas fa-envelope"></i> 联系我</a></p>
+<p class="join-actions"><a class="join-button" href="mailto:{{ site.email | encode_email }}?subject=%E5%90%88%E4%BD%9C%E4%BA%A4%E6%B5%81">{% include icon.html name="envelope" %} 联系我</a></p>
