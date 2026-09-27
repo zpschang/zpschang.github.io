@@ -18,6 +18,7 @@
   name: WALL-B Logistics Sorting
   name_zh: WALL-B 物流分拣
   image: wall-b-logistics.jpg
+  video: wall-b-logistics
   wide: true
   desc_en: "Our WALL-B embodied foundation model drives two robot arms to sort highly variable real-world parcels fully autonomously: 1,816 parcels per hour at over 98% accuracy in a public livestream, and now deployed on a live production line with a leading logistics company."
   desc_zh: "WALL-B 具身基础模型驱动双臂，全自主分拣大小、形状、材质各异的真实物流包裹：全球直播中分拣效率达 1816 件/小时、准确率超过 98%，并已与头部物流企业合作部署到真实产线。"
