@@ -3,6 +3,7 @@ layout: page
 title: Join Us
 description: Research on foundation models, data, and agent infrastructure for physical AGI.
 permalink: /join/
+keywords: Pushi Zhang, 张蒲石, physical AGI, embodied AI, robot foundation models, research collaboration
 lang: en
 alt_url: /cn/join/
 nav: true
@@ -53,7 +54,7 @@ We treat these as design principles across models, data, and infrastructure.
 
 ## What We Work On
 
-At [X Square Robot](https://x2robot.com/en), our work spans the full path from data to deployment: pretraining recipes and action representations for foundation models, embodiment-consistent data systems with rigorous quality control and mixture strategies, and the agent infrastructure that accelerates both, all tested in real-world deployment where models do productive work. It is organized in three directions:
+Our work spans the full path from data to deployment: pretraining recipes and action representations for foundation models, embodiment-consistent data systems with rigorous quality control and mixture strategies, and the agent infrastructure that accelerates both, all tested in real-world deployment where models do productive work. It is organized in three directions:
 
 - **Foundation model research** — designing model architectures and training methods for physical intelligence, giving models long-horizon memory, hierarchical planning with high-frequency execution, asynchronous control, and multimodal in-context learning.
 - **Data research** — building data pipelines toward general embodied language and action intelligence, covering the full loop from perception, language, and reasoning to execution and feedback.
