@@ -5,6 +5,10 @@ description: Research on foundation models, data, and agent infrastructure for p
 permalink: /join/
 lang: en
 alt_url: /cn/join/
+nav: true
+nav_order: 2
+title_zh: 加入我们
+permalink_zh: /cn/join/
 ---
 
 ## Vision
@@ -37,9 +41,9 @@ Most current vision-language-action models run at a single frequency, with short
 
 A model's ceiling is set by its body. The bandwidth and precision of motion control, the degrees of freedom and sensors of the hardware, and the consistency of data-collection devices all determine what a model can learn and what it can accomplish. We design models with a deep understanding of motion control, hardware, and data collection, and adapt them to these systems; in turn, the robot and its data collection evolve around what the model needs, and the loop is closed in real deployment.
 
-### Lessons from language foundation models
+### Lessons from large language models
 
-Language models show that progress comes not only from scale, but from scaling effectively, running efficiently, and aligning with human values. Physical AGI must carry these lessons into the physical world:
+Large language models show that progress comes not only from scale, but from scaling effectively, running efficiently, and aligning with human values. Physical AGI must carry these lessons into the physical world:
 
 - **Effective scaling** — finding the axes along which physical intelligence scales (data diversity, embodiments, model size, compute) and the laws that make that scaling predictable;
 - **Efficiency** — training and inference efficient enough for real-time control on real robots and for fast iteration at scale;
@@ -49,7 +53,7 @@ We treat these as design principles across models, data, and infrastructure.
 
 ## What We Work On
 
-Our work spans the full path from data to deployment: pretraining recipes and action representations for foundation models, embodiment-consistent data systems with rigorous quality control and mixture strategies, and the agent infrastructure that accelerates both, all tested in real-world deployment where models do productive work. It is organized in three directions:
+At [X Square Robot](https://x2robot.com/en), our work spans the full path from data to deployment: pretraining recipes and action representations for foundation models, embodiment-consistent data systems with rigorous quality control and mixture strategies, and the agent infrastructure that accelerates both, all tested in real-world deployment where models do productive work. It is organized in three directions:
 
 - **Foundation model research** — designing model architectures and training methods for physical intelligence, giving models long-horizon memory, hierarchical planning with high-frequency execution, asynchronous control, and multimodal in-context learning.
 - **Data research** — building data pipelines toward general embodied language and action intelligence, covering the full loop from perception, language, and reasoning to execution and feedback.
@@ -67,7 +71,7 @@ We hope to collaborate with people who:
 - let evidence and experiments guide their research, have a nose for good problems, think clearly, and do not take established conclusions for granted, including ours;
 - put the team's success before their own, communicate candidly, take ownership, and keep the whole picture in view;
 - have hands-on real-robot experience, a thorough understanding of the whole robot system, and particular curiosity about motion control and hardware;
-- have solid mathematics and programming skills and genuine depth in a chosen area; experience with large-scale training is a plus.
+- have solid mathematics, excellent engineering skills, and genuine depth in a chosen area; experience with large-scale training is a plus.
 
 Both internships and full-time roles are possible. If you are interested, or would like to exchange ideas, feel free to reach out at [{{ site.email }}](mailto:{{ site.email | encode_email }}).
 
