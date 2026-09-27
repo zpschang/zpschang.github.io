@@ -31,8 +31,8 @@
   image: twindex.jpg
   role_en: Core contributor
   role_zh: 核心贡献者
-  desc_en: A co-designed wearable and robotic hand that turns robot-free demonstrations into dexterous robot manipulation, making data collection scalable.
-  desc_zh: 可穿戴采集装置与机器人灵巧手协同设计，让无本体示教数据直接用于机器人灵巧操作，使数据采集可规模化。
+  desc_en: "An embodiment-consistent, high-efficiency data collection system for dexterous hands: a wearable device and a matching robot hand share one design, so human demonstrations transfer directly to the robot at scale."
+  desc_zh: "本体一致、高效率的灵巧手数据采集系统：可穿戴采集装置与机器人灵巧手同构设计，人手示教可直接迁移到机器人，实现规模化采集。"
   links:
     - { label: Project, label_zh: 主页, url: "https://x2robot.com/en/pages/twindex", url_zh: "https://x2robot.com/pages/twindex" }
 

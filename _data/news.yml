@@ -1,7 +1,7 @@
 # Homepage news, shared by the English (/) and Chinese (/cn/) pages. Newest first; `en` / `zh` accept Markdown.
 - date: 2026-09-02
-  en: Introduced [TwinDEX](https://x2robot.com/en/pages/twindex), a co-designed wearable and robotic hand system for learning dexterous manipulation from robot-free demonstrations.
-  zh: 发布 [TwinDEX](https://x2robot.com/pages/twindex)：协同设计的可穿戴采集装置与机器人灵巧手，从无本体示教数据中学习灵巧操作。
+  en: Introduced [TwinDEX](https://x2robot.com/en/pages/twindex), an embodiment-consistent, high-efficiency data collection system for dexterous hands.
+  zh: 发布 [TwinDEX](https://x2robot.com/pages/twindex)：本体一致、高效率的灵巧手数据采集系统。
 
 - date: 2026-08-12
   en: "Sorted real-world parcels fully autonomously with our WALL-B model in a [global livestream](https://x2robot.com/en/news/6a7d67be4dd82e1d55074f8a): 1,816 parcels per hour at over 98% accuracy."

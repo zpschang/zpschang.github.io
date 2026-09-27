@@ -19,6 +19,11 @@
   url: https://www.ijcai.org/
   color: "#9a5518"
 
+"Report":
+  name: Technical report (arXiv)
+  url: https://arxiv.org/
+  color: "#3f5f7a"
+
 "arXiv":
   name: arXiv preprint
   url: https://arxiv.org/
