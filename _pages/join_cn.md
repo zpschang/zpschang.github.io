@@ -69,6 +69,10 @@ alt_url: /join/
 - 有真机经验，对机器人整体系统有充分理解，尤其对运动控制与硬件抱有好奇心；
 - 数学功底扎实、工程能力出色，在某个方向上有深入的积累，有大规模训练经验更佳。
 
+## 与我们合作
+
+我们拥有大量在真实物理世界中采集的数据，并且支持自由地探索对模型能力有效的方案。
+
 实习、全职均可。如果你有意愿，或者希望交流，欢迎联系我：[{{ site.email }}](mailto:{{ site.email | encode_email }})。
 
 <p class="join-actions"><a class="join-button" href="mailto:{{ site.email | encode_email }}?subject=%E5%90%88%E4%BD%9C%E4%BA%A4%E6%B5%81"><i class="fas fa-envelope"></i> 联系我</a></p>

@@ -12,6 +12,26 @@
       }, { rootMargin: "-60px 0px 0px 0px" }).observe(hero);
     }
 
+    // Project card videos: load and play only while visible; posters only for reduced motion / data saver.
+    var vids = document.querySelectorAll("video[data-autoplay]");
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var saveData = navigator.connection && navigator.connection.saveData;
+    if (vids.length && !reduce && !saveData && "IntersectionObserver" in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          var v = e.target;
+          if (e.isIntersecting) {
+            if (v.preload === "none") v.preload = "auto";
+            var p = v.play();
+            if (p && p.catch) p.catch(function () {});
+          } else {
+            v.pause();
+          }
+        });
+      }, { threshold: 0.35 });
+      vids.forEach(function (v) { io.observe(v); });
+    }
+
     // Keep the reader's place when switching language: carry the current section over as #hash.
     var sw = document.querySelector(".lang-switch a");
     if (sw) {

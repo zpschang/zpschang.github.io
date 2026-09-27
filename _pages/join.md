@@ -74,6 +74,10 @@ We hope to collaborate with people who:
 - have hands-on real-robot experience, a thorough understanding of the whole robot system, and particular curiosity about motion control and hardware;
 - have solid mathematics, excellent engineering skills, and genuine depth in a chosen area; experience with large-scale training is a plus.
 
+## Working With Us
+
+We have a large body of data collected in the real physical world, and we support the freedom to explore any approach that improves model capability.
+
 Both internships and full-time roles are possible. If you are interested, or would like to exchange ideas, feel free to reach out at [{{ site.email }}](mailto:{{ site.email | encode_email }}).
 
 <p class="join-actions"><a class="join-button" href="mailto:{{ site.email | encode_email }}?subject=Collaboration"><i class="fas fa-envelope"></i> Get in touch</a></p>

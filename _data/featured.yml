@@ -1,12 +1,11 @@
 # "Featured Work" cards on the homepage, shared by the English and Chinese pages.
 # wide: true renders a full-width card; role_* adds a small badge; name_zh / url_zh override the name / a link on the Chinese page;
-# en_only: true shows a link on the English page only.
+# en_only: true shows a link on the English page only; video: <name> plays assets/video/projects/<name>.{webm,mp4} over the image.
 - key: wall-oss-0-5
   name: Wall-OSS-0.5
   image: wall-oss-0.5.jpg
+  video: wall-oss-0.5
   wide: true
-  role_en: Core contributor
-  role_zh: 核心贡献者
   desc_en: An open-source 4B vision-language-action foundation model, pretrained across 20+ robot embodiments, that already completes real-robot manipulation tasks before any task-specific fine-tuning.
   desc_zh: 开源 4B 视觉-语言-动作基础模型，在 20 多种机器人本体上预训练，未经任务微调即可在真机上完成操作任务。
   links:
@@ -20,8 +19,6 @@
   name_zh: WALL-B 物流分拣
   image: wall-b-logistics.jpg
   wide: true
-  role_en: Core contributor
-  role_zh: 核心贡献者
   desc_en: "Our WALL-B embodied foundation model drives two robot arms to sort highly variable real-world parcels fully autonomously: 1,816 parcels per hour at over 98% accuracy in a public livestream, and now deployed on a live production line with a leading logistics company."
   desc_zh: "WALL-B 具身基础模型驱动双臂，全自主分拣大小、形状、材质各异的真实物流包裹：全球直播中分拣效率达 1816 件/小时、准确率超过 98%，并已与头部物流企业合作部署到真实产线。"
   links:
@@ -31,8 +28,8 @@
 - key: twindex
   name: TwinDEX
   image: twindex.jpg
-  role_en: Core contributor
-  role_zh: 核心贡献者
+  video: twindex
+  wide: true
   desc_en: "An embodiment-consistent, high-efficiency data collection system for dexterous hands: a wearable device and a matching robot hand share one design, so human demonstrations transfer directly to the robot at scale."
   desc_zh: "本体一致、高效率的灵巧手数据采集系统：可穿戴采集装置与机器人灵巧手同构设计，人手示教可直接迁移到机器人，实现规模化采集。"
   links:
@@ -52,6 +49,7 @@
 - key: wall-wm
   name: WALL-WM
   image: wall-wm.jpg
+  video: wall-wm
   desc_en: A world action model that learns from semantic action events rather than fixed-length action chunks.
   desc_zh: 世界动作模型，以语义动作事件而非固定长度的动作块作为学习单元。
   links:

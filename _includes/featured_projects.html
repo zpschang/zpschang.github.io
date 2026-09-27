@@ -6,7 +6,17 @@
   {%- assign first_url = p.links[0].url -%}
   {%- if zh and p.links[0].url_zh -%}{%- assign first_url = p.links[0].url_zh -%}{%- endif %}
   <div class="project-card{% if p.wide %} project-card--wide{% endif %}" id="{{ p.key }}">
-    <a class="project-img-link" href="{{ first_url }}"><img class="project-img" src="{{ p.image | prepend: '/assets/img/projects/' | relative_url }}" alt="{% if zh and p.name_zh %}{{ p.name_zh }}{% else %}{{ p.name }}{% endif %}" loading="lazy"></a>
+    {%- capture p_alt %}{% if zh and p.name_zh %}{{ p.name_zh }}{% else %}{{ p.name }}{% endif %}{% endcapture %}
+    <a class="project-img-link" href="{{ first_url }}">
+      {%- if p.video %}
+      <video class="project-img" data-autoplay muted loop playsinline preload="none" poster="{{ p.image | prepend: '/assets/img/projects/' | relative_url }}" aria-label="{{ p_alt }}">
+        <source src="{{ p.video | prepend: '/assets/video/projects/' | append: '.mp4' | relative_url }}" type="video/mp4">
+        <source src="{{ p.video | prepend: '/assets/video/projects/' | append: '.webm' | relative_url }}" type="video/webm">
+      </video>
+      {%- else %}
+      <img class="project-img" src="{{ p.image | prepend: '/assets/img/projects/' | relative_url }}" alt="{{ p_alt }}" loading="lazy">
+      {%- endif %}
+    </a>
     <div class="project-body">
       <div class="project-head">
         <h3 class="project-name">{% if zh and p.name_zh %}{{ p.name_zh }}{% else %}{{ p.name }}{% endif %}</h3>
