@@ -1,0 +1,535 @@
+/*******************************************************************************
+ * Site-specific styles (homepage hero, project cards, news, publications).
+ * Loaded last in assets/css/main.scss, so these override the theme defaults.
+ ******************************************************************************/
+
+// System font stack: no web-font download (Google Fonts is slow or blocked in
+// mainland China), and proper Chinese glyphs on every platform.
+$font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+  "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", "Noto Sans SC", sans-serif;
+
+body,
+.navbar,
+h1, h2, h3, h4, h5, h6,
+.btn {
+  font-family: $font-stack;
+}
+
+body {
+  line-height: 1.65;
+}
+
+.navbar .nav-link {
+  font-size: 0.95rem;
+}
+
+.navbar .lang-switch .nav-link {
+  font-weight: 500;
+}
+
+// ---------------------------------------------------------------- Hero header
+
+.home .hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.25rem 0 1.75rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.home .hero-name {
+  font-size: 2.4rem;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  margin: 0 0 0.4rem;
+}
+
+.home .hero-name .hero-name-alt {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--global-text-color-light);
+  margin-left: 0.25rem;
+}
+
+.home .hero-role {
+  font-size: 1.15rem;
+  margin: 0 0 0.2rem;
+}
+
+.home .hero-tagline {
+  color: var(--global-text-color-light);
+  margin: 0 0 1rem;
+}
+
+.home .hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.home .pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.85rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 999px;
+  font-size: 0.88rem;
+  color: var(--global-text-color);
+  transition: border-color 0.15s, color 0.15s;
+
+  i {
+    color: inherit;
+  }
+
+  &:hover {
+    border-color: var(--global-theme-color);
+    color: var(--global-theme-color);
+    text-decoration: none;
+  }
+}
+
+.home .hero-photo {
+  width: 160px;
+  height: 160px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.12);
+}
+
+// ---------------------------------------------------------------- Section headings
+
+.home article h2 {
+  font-size: 1.35rem;
+  font-weight: 650;
+  margin: 2.4rem 0 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.home article p {
+  margin-bottom: 0.9rem;
+}
+
+// ---------------------------------------------------------------- Project cards
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 10px;
+  background: var(--global-card-bg-color);
+  scroll-margin-top: 80px; // keep anchored cards clear of the fixed navbar
+  transition: box-shadow 0.2s, transform 0.2s;
+
+  &:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+  }
+
+  &:target {
+    border-color: var(--global-theme-color);
+  }
+}
+
+.project-img-link {
+  display: block;
+  line-height: 0;
+}
+
+.project-img {
+  width: 100%;
+  max-width: none;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+  background: #eef0f3;
+}
+
+.project-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0.8rem 0.95rem 0.9rem;
+}
+
+.project-head {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.project-card .project-name {
+  font-size: 1.05rem;
+  font-weight: 650;
+  margin: 0;
+}
+
+.project-card .project-role {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--global-theme-color);
+  border: 1px solid var(--global-theme-color);
+  border-radius: 999px;
+  padding: 0.05rem 0.55rem;
+}
+
+.project-card .project-desc {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  margin: 0 0 0.6rem;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.9rem;
+  margin-top: auto;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.project-card--wide {
+  grid-column: 1 / -1;
+  flex-direction: row;
+
+  .project-img-link {
+    flex: 0 0 46%;
+  }
+
+  .project-img {
+    height: 100%;
+    min-height: 200px;
+    aspect-ratio: auto;
+  }
+
+  .project-body {
+    padding: 1.1rem 1.3rem;
+  }
+
+  .project-name {
+    font-size: 1.3rem;
+  }
+
+  .project-desc {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .project-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .project-card--wide {
+    flex-direction: column;
+
+    .project-img {
+      height: auto;
+      min-height: 0;
+      aspect-ratio: 2 / 1;
+    }
+  }
+}
+
+// ---------------------------------------------------------------- News
+
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    display: grid;
+    grid-template-columns: 5.2rem minmax(0, 1fr);
+    gap: 0.9rem;
+    padding: 0.4rem 0;
+  }
+}
+
+.news-list .news-date {
+  color: var(--global-text-color-light);
+  font-variant-numeric: tabular-nums;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+// ---------------------------------------------------------------- Publications
+
+.pubs-note {
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+}
+
+.publications {
+  margin-top: 1rem;
+
+  h2.bibliography {
+    color: var(--global-text-color-light);
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: left;
+    border-top: 0;
+    padding-top: 0;
+    margin: 2rem 0 0.75rem;
+  }
+
+  ol.bibliography li {
+    margin-bottom: 1.1rem;
+
+    // Narrow, fixed-width badge column instead of Bootstrap's 1/6 of the row
+    @media (min-width: 576px) {
+      > .row {
+        flex-wrap: nowrap;
+      }
+
+      > .row > .abbr {
+        flex: 0 0 6.5rem;
+        max-width: 6.5rem;
+      }
+
+      > .row > .col-sm-10 {
+        flex: 1 1 0;
+        max-width: none;
+        min-width: 0;
+      }
+    }
+
+    .abbr {
+      height: auto;
+
+      abbr.badge {
+        box-shadow: none;
+        min-width: 5.2rem;
+        padding: 0.35rem 0.5rem;
+        font-size: 0.72rem;
+        font-weight: 600;
+        border-radius: 4px;
+        text-align: center;
+      }
+    }
+
+    .title {
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    .author {
+      font-size: 0.93rem;
+
+      em {
+        font-style: normal;
+        font-weight: 600;
+        border-bottom: 0;
+      }
+
+      sup {
+        margin-left: 1px;
+      }
+
+      .author-full,
+      .more-authors .when-expanded {
+        display: none;
+      }
+
+      &.expanded .author-full,
+      &.expanded .more-authors .when-expanded {
+        display: inline;
+      }
+
+      &.expanded .author-short,
+      &.expanded .more-authors .when-collapsed {
+        display: none;
+      }
+
+      .more-authors {
+        margin-left: 0.35rem;
+        padding: 0;
+        border: 0;
+        background: none;
+        font-size: 0.85rem;
+        color: var(--global-text-color-light);
+        text-decoration: underline dotted;
+        cursor: pointer;
+
+        span {
+          color: inherit;
+        }
+
+        &:hover {
+          color: var(--global-theme-color);
+        }
+      }
+    }
+
+    .periodical {
+      font-size: 0.9rem;
+      color: var(--global-text-color-light);
+
+      em {
+        color: inherit;
+      }
+    }
+
+    .links a.btn {
+      margin: 0.35rem 0.3rem 0 0;
+      padding: 0.1rem 0.6rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      text-transform: none;
+      border: 1px solid var(--global-divider-color);
+      border-radius: 4px;
+      color: var(--global-text-color);
+
+      &:hover {
+        color: var(--global-theme-color);
+        border-color: var(--global-theme-color);
+      }
+    }
+  }
+}
+
+// ---------------------------------------------------------------- Footer
+
+footer.site-footer {
+  font-size: 0.82rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+
+  .container {
+    color: var(--global-text-color-light);
+  }
+}
+
+// ---------------------------------------------------------------- Small screens
+
+@media (max-width: 575.98px) {
+  .home .hero {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .home .hero-photo {
+    width: 112px;
+    height: 112px;
+  }
+
+  .home .hero-name {
+    font-size: 2rem;
+  }
+
+  .news-list li {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.1rem;
+  }
+}
+
+// ---------------------------------------------------------------- Interaction polish
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+// Anchored sections and cards land clear of the fixed navbar.
+.home article h2[id],
+.project-card {
+  scroll-margin-top: 80px;
+}
+
+// Navbar name on the homepage: hidden while the header is visible, fades in after it.
+.navbar .brand-autohide {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+
+  &.brand-visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+// Cards: subtle image zoom on hover, and a short highlight when jumped to from the About text.
+.project-img-link {
+  overflow: hidden;
+}
+
+.project-img {
+  transition: transform 0.45s ease;
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.03);
+}
+
+@keyframes project-target-flash {
+  from {
+    box-shadow: 0 0 0 4px rgba(26, 95, 180, 0.35);
+  }
+
+  to {
+    box-shadow: 0 0 0 0 rgba(26, 95, 180, 0);
+  }
+}
+
+.project-card:target {
+  animation: project-target-flash 1.8s ease-out;
+}
+
+.home .pill:hover {
+  background-color: rgba(26, 95, 180, 0.06);
+}
+
+html[data-theme='dark'] .home .pill:hover {
+  background-color: rgba(122, 182, 240, 0.1);
+}
+
+// Visible keyboard focus.
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible {
+  outline: 2px solid var(--global-theme-color);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-card,
+  .project-card:hover,
+  .project-img,
+  .project-card:hover .project-img {
+    transition: none;
+    transform: none;
+    animation: none;
+  }
+}
+
+// ---------------------------------------------------------------- Page titles (Publications, Blog)
+
+.post-header .post-title {
+  font-size: 2rem;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  margin-top: 1.25rem;
+}
+
+.post-header .post-description {
+  color: var(--global-text-color-light);
+  margin-bottom: 0;
+}

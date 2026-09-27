@@ -1,77 +1,51 @@
 ---
 layout: default
 ---
-
+{%- assign t = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
 <!-- about.html -->
-      <div class="post">
-        <header class="post-header">
-          <h1 class="post-title">
-            {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
-          </h1>
-          <p class="desc">{{ page.subtitle }}</p>
+      <div class="post home">
+        <header class="hero">
+          <div class="hero-text">
+            <h1 class="hero-name">{{ page.hero.name }} <span class="hero-name-alt">{{ page.hero.name_alt }}</span></h1>
+            <p class="hero-role">{{ page.hero.role }} · <a href="{{ page.hero.org_url }}">{{ page.hero.org }}</a></p>
+            {%- if page.hero.tagline %}
+            <p class="hero-tagline">{{ page.hero.tagline }}</p>
+            {%- endif %}
+            <div class="hero-links">
+              {%- if site.scholar_userid %}
+              <a class="pill" href="https://scholar.google.com/citations?user={{ site.scholar_userid }}"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+              {%- endif %}
+              {%- if site.github_username %}
+              <a class="pill" href="https://github.com/{{ site.github_username }}"><i class="fab fa-github"></i> GitHub</a>
+              {%- endif %}
+              {%- if site.email %}
+              <a class="pill" href="mailto:{{ site.email | encode_email }}"><i class="fas fa-envelope"></i> {{ t.email }}</a>
+              {%- endif %}
+            </div>
+          </div>
+          <img class="hero-photo" src="{{ '/assets/img/prof_pic.jpg' | relative_url | bust_file_cache }}" alt="{{ page.hero.name }}" width="160" height="160">
         </header>
 
         <article>
-          {% if page.profile -%}
-          <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
-            {%- if page.profile.image %}
-              {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
+          {{ content }}
 
-              {% if page.profile.image_circular %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
-              {% else %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
-              {% endif %}
-
-              {% include figure.html
-              path=profile_image_path
-              class=profile_image_class
-              alt=page.profile.image
-              cache_bust=true -%}
-            {% endif -%}
-            {%- if page.profile.more_info %}
-            <div class="more-info">
-              {{ page.profile.more_info }}
-            </div>
-            {%- endif %}
-          </div>
+          {% if page.featured_projects -%}
+          <h2 id="projects">{{ t.projects }}</h2>
+          {%- include featured_projects.html %}
           {%- endif %}
 
-          <div class="clearfix">
-            {{ content }}
-          </div>
-
-          <!-- News -->
-          {% if page.news and site.announcements.enabled -%}
-            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
-            {%- include news.html limit=true %}
+          {% if page.news -%}
+          <h2 id="news">{{ t.news }}</h2>
+          {%- include news_list.html %}
           {%- endif %}
 
-          <!-- Latest posts -->
-          {% if page.latest_posts -%}
-            <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">latest posts</a></h2>
-            {%- include latest_posts.html %}
-          {%- endif %}
-
-          <!-- Selected papers -->
           {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2>
-            {%- include selected_papers.html %}
+          <h2 id="publications">{{ t.selected_pubs }}</h2>
+          <p class="pubs-note">{{ t.equal }} · <a href="{{ '/publications/' | relative_url }}">{{ t.all_pubs }} &rarr;</a></p>
+          {%- include selected_papers.html %}
           {%- endif %}
 
-          <!-- Social -->
-          {%- if page.social %}
-            <div class="social">
-              <div class="contact-icons">
-                {% include social.html %}
-              </div>
-
-              <div class="contact-note">
-                {{ site.contact_note }}
-              </div>
-
-            </div>
-          {%- endif %}
+          <h2 id="contact">{{ t.contact_title }}</h2>
+          <p>{{ t.contact_text }} <a href="mailto:{{ site.email | encode_email }}">{{ site.email }}</a></p>
         </article>
-
-</div>
+      </div>

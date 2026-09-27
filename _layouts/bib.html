@@ -30,24 +30,22 @@
         {%- endif -%}
 
         <!-- Entry bib key -->
-        <div id="{{entry.key}}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
+        <div id="{{entry.key}}" class="{% if site.enable_publication_thumbnails %}col-sm-10{% else %}col-sm-12{% endif %}">
         <!-- Title -->
         <div class="title">{{entry.title}}</div>
-        <!-- Author -->
-        <div class="author">
-        {% assign author_array_size = entry.author_array | size %}
-
-        {% assign author_array_limit = author_array_size %}
-        {%- if site.max_author_limit and author_array_size > site.max_author_limit %}
-          {% assign author_array_limit = site.max_author_limit %}
-        {% endif %}
-
-        {%- for author in entry.author_array limit: author_array_limit -%}
+        <!-- Author: full list, or a short form (leading authors + self) with a toggle for long lists -->
+        {%- assign author_array_size = entry.author_array | size -%}
+        {%- assign equal_n = entry.equal | default: 0 | plus: 0 -%}
+        {%- assign short_n = site.author_short_count | default: 3 -%}
+        {%- assign self_index = -1 -%}
+        {%- assign author_html = "" | split: "" -%}
+        {%- for author in entry.author_array -%}
           {%- assign author_is_self = false -%}
           {%- assign author_last_name = author.last | remove: "¶" | remove: "&" | remove: "*" | remove: "†" | remove: "^" -%}
           {%- if site.scholar.last_name contains author_last_name -%}
             {%- if site.scholar.first_name contains author.first -%}
               {%- assign author_is_self = true -%}
+              {%- assign self_index = forloop.index0 -%}
             {%- endif -%}
           {%- endif -%}
           {%- assign coauthor_url = nil -%}
@@ -59,54 +57,32 @@
               {%- endif -%}
             {%- endfor -%}
           {%- endif -%}
-
-          {%- if forloop.length > 1 -%}
-            {%- if forloop.first == false -%},&nbsp;{%- endif -%}
-            {%- if forloop.last and author_array_limit == author_array_size -%}and&nbsp;{%- endif -%}
-          {%- endif -%}
-          {%- if author_is_self -%}
-            <em>{{author.first}} {{author.last}}</em>
-          {%- else -%}
-            {%- if coauthor_url -%}
-              <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>
-            {%- else -%}
-              {{author.first}} {{author.last}}
-            {%- endif -%}
-          {%- endif -%}
+          {%- assign author_name = author.first | append: " " | append: author.last | strip -%}
+          {%- capture one_author -%}
+            {%- if author_is_self -%}<em>{{ author_name }}</em>
+            {%- elsif coauthor_url -%}<a href="{{ coauthor_url }}">{{ author_name }}</a>
+            {%- else -%}{{ author_name }}{%- endif -%}
+            {%- if forloop.index <= equal_n -%}<sup>*</sup>{%- endif -%}
+          {%- endcapture -%}
+          {%- assign author_html = author_html | push: one_author -%}
         {%- endfor -%}
-        {%- assign more_authors = author_array_size | minus: author_array_limit -%}
-
-        {%- assign more_authors_hide = more_authors | append: " more author" -%}
-        {%- if more_authors > 0 -%}
-          {%- if more_authors > 1 -%}
-            {%- assign more_authors_hide = more_authors_hide | append: "s" -%}
-          {%- endif -%}
-          {%- assign more_authors_show = '' -%}
-          {%- for author in entry.author_array offset: author_array_limit -%}
-            {%- assign more_authors_show = more_authors_show | append: author.first | append: " " | append: author.last -%}
-            {%- unless forloop.last -%}
-              {%- assign more_authors_show = more_authors_show | append: ", " -%}
-            {%- endunless -%}
+        {%- capture authors_full -%}
+          {%- for a in author_html -%}
+            {%- unless forloop.first -%}{%- if forloop.last -%}{%- if author_array_size > 2 -%},{%- endif %} and {% else -%}, {% endif -%}{%- endunless -%}
+            {{- a -}}
           {%- endfor -%}
-          , and
-          <span
-              class="more-authors"
-              title="click to view {{more_authors_hide}}"
-              onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '{{more_authors_hide}}' ? '{{more_authors_show}}' : '{{more_authors_hide}}';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '{{site.more_authors_animation_delay}}');
-              "
-          >{{more_authors_hide}}</span>
+        {%- endcapture -%}
+        <div class="author">
+        {%- if site.max_author_limit and author_array_size > site.max_author_limit -%}
+          <span class="author-short">
+            {%- for a in author_html limit: short_n -%}{%- unless forloop.first -%}, {% endunless -%}{{- a -}}{%- endfor -%}
+            {%- if self_index >= short_n -%}, &hellip;, {{ author_html[self_index] }}{%- endif -%}, et al.
+          </span>
+          <span class="author-full">{{ authors_full }}</span>
+          <button type="button" class="more-authors" aria-expanded="false" onclick="this.setAttribute('aria-expanded', this.parentNode.classList.toggle('expanded'))"><span class="when-collapsed">all {{ author_array_size }} authors</span><span class="when-expanded">show less</span></button>
+        {%- else -%}
+          {{ authors_full }}
         {%- endif -%}
-
         </div>
 
         <!-- Journal/Book title and date -->
@@ -142,10 +118,7 @@
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           {%- endif %}
           {%- if entry.arxiv %}
-            <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
-          {%- endif %}
-          {%- if entry.bibtex_show %}
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="https://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
           {%- endif %}
           {%- if entry.html %}
             <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
@@ -185,7 +158,16 @@
             {%- endif %}
           {%- endif %}
           {%- if entry.website %}
-            <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
+            <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Project</a>
+          {%- endif %}
+          {%- if entry.model %}
+            <a href="{{ entry.model }}" class="btn btn-sm z-depth-0" role="button">Model</a>
+          {%- endif %}
+          {%- if entry.demo %}
+            <a href="{{ entry.demo }}" class="btn btn-sm z-depth-0" role="button">Video</a>
+          {%- endif %}
+          {%- if entry.bibtex_show %}
+            <a class="bibtex btn btn-sm z-depth-0" role="button">BibTeX</a>
           {%- endif %}
           </div>
           {% if site.enable_publication_badges %}

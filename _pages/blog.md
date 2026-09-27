@@ -12,7 +12,7 @@ pagination:
   trail:
     before: 1 # The number of links before the current page
     after: 3  # The number of links after the current page
-nav: true
+nav: false  # hidden from the navbar until there are published posts
 nav_order: 2
 ---
 

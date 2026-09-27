@@ -1,6 +1,28 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+# Badge colors for the `abbr` field in _bibliography/papers.bib
+"ICLR":
+  url: https://iclr.cc/
+  color: "#2f7d5b"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"NeurIPS":
+  url: https://neurips.cc/
+  color: "#5b4b9a"
+
+"NeurIPS-W":
+  url: https://www.robot-learning.ml/2023/
+  color: "#8173b8"
+
+"IJCAI":
+  url: https://www.ijcai.org/
+  color: "#b0651f"
+
+"arXiv":
+  url: https://arxiv.org/
+  color: "#a4262c"
+
+"CoG":
+  url: https://ieee-cog.org/
+  color: "#3b7ea1"
+
+"Neurocomp.":
+  url: https://www.sciencedirect.com/journal/neurocomputing
+  color: "#6b7280"
